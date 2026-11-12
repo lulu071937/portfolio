@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Susan Lu — Marketing Portfolio</title>
+<meta property="og:title" content="Susan Lu — Marketing Portfolio">
+<meta property="og:description" content="Content creator and marketing analytics student at USC Marshall, focused on beauty and fashion.">
+<meta property="og:type" content="website">
+<meta name="description" content="Hsin-Yi (Susan) Lu — MS Marketing (Analytics) at USC Marshall. Content creator, beauty and fashion marketing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Instrument+Sans:wght@500;600;700&family=Source+Code+Pro:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F5F0E8; --paper:#ECE5D9; --greige:#D4CABB; --line:#DCD3C5;
+  --ink:#2B211D; --body:#4A3B34; --mute:#857468; --accent:#94574A; --rose:#C08A7A; --blush:#F2E3DB; --sage:#7D8471;
+  --night:#2C2721; --night-2:#38322B; --night-ink:#EFE8DC; --night-mute:#A99F92;
+  --serif:"Instrument Serif", "Cormorant Garamond", Georgia, serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:min(1180px, 100% - 48px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--body);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{width:var(--wrap);margin-inline:auto}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500}
+
+/* demo bar */
+.demo{background:#17140F;color:#D9D0C2;font-size:13px}
+.demo .wrap{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:8px 0}
+.demo b{font-weight:600;color:#fff}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:var(--night);color:var(--night-ink);border-bottom:1px solid rgba(255,255,255,.06)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.mark{font-family:var(--serif);font-size:26px;text-decoration:none}
+nav.main{display:flex;gap:28px;font-size:14px}
+nav.main a{text-decoration:none;color:var(--night-mute)}
+nav.main a:hover{color:#fff}
+
+/* placeholders */
+.ph{position:relative;background:repeating-linear-gradient(135deg, transparent 0 10px, rgba(35,30,26,.035) 10px 11px), var(--paper);
+   border:1px dashed #BDB1A0;display:flex;align-items:flex-end;overflow:hidden}
+.ph span{font-size:11px;letter-spacing:.06em;color:var(--mute);background:rgba(245,240,232,.92);padding:5px 8px;margin:10px;border-radius:2px;line-height:1.35}
+.ph span::before{content:"+ ";color:var(--accent);font-weight:600}
+.r916{aspect-ratio:9/16}.r169{aspect-ratio:16/9}.r43{aspect-ratio:4/3}
+.pending{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);border:1px solid currentColor;padding:2px 7px;border-radius:2px;font-weight:600;margin-right:6px}
+
+/* hero */
+.hero{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
+.hero .photo{position:absolute;top:0;right:0;bottom:0;width:58%}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:42% 30%}
+.hero .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night) 0%,rgba(44,39,33,.55) 22%,rgba(44,39,33,0) 48%),linear-gradient(0deg,rgba(44,39,33,.5),rgba(44,39,33,0) 30%)}
+.hero .wrap{position:relative;min-height:min(680px,86vh);display:flex;align-items:center;padding:72px 0}
+.hero .text{max-width:540px}
+.hero .eyebrow{color:var(--night-mute)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(68px,9vw,132px);line-height:.9;letter-spacing:-.01em;margin:16px 0 26px}
+.hero h1 em{font-style:italic;color:#D9A898}
+.hero p.lede{font-size:18px;color:#DCD3C6;max-width:30em}
+.proof{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:40px;margin-top:38px;padding-top:26px;border-top:1px solid rgba(239,232,220,.18)}
+.proof strong{display:block;font-family:var(--serif);font-weight:400;font-size:42px;line-height:1;color:#fff}
+.proof small{display:block;font-size:13px;color:var(--night-mute);margin-top:6px;max-width:13em;line-height:1.4}
+.cta{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;font-size:14px;font-weight:500;border:1px solid currentColor;text-decoration:none;border-radius:2px;transition:background .2s,color .2s,border-color .2s}
+.btn.light{background:var(--night-ink);color:var(--night);border-color:var(--night-ink)}
+.btn.light:hover{background:#fff}
+.btn.off{border-style:dashed;color:var(--night-mute);cursor:default}
+.btn.ghost{color:var(--night-ink);border-color:rgba(239,232,220,.5)}
+.btn.ghost:hover{background:rgba(239,232,220,.1)}
+
+/* work */
+section{scroll-margin-top:62px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding-bottom:20px;border-bottom:1px solid var(--ink);margin-bottom:44px}
+.sec-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1}
+.sec-head p{color:var(--mute);font-size:14px;max-width:28em;text-align:right}
+#work{padding:88px 0 96px}
+.card{display:block;text-align:left;width:100%;cursor:pointer;color:inherit}
+.card .media{overflow:hidden;background:var(--paper)}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.card:hover .media img{transform:scale(1.025)}
+.card .num{font-family:var(--serif);font-size:20px;color:var(--accent)}
+.card h3{font-family:var(--serif);font-weight:400;font-size:32px;line-height:1.08;margin:6px 0 10px}
+.card .tags{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.card .hook{margin-top:14px;font-size:15px;color:#3B342E}
+.card .hook b{font-weight:600}
+.card .more{display:inline-block;margin-top:16px;font-size:13px;font-weight:600;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.card:hover .more{color:var(--accent);border-color:var(--accent)}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+.feature{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding-bottom:56px;margin-bottom:56px;border-bottom:1px solid var(--line)}
+.feature h3{font-size:46px}
+.rn-media{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:start;background:none!important}
+.statpanel{background:var(--night);color:var(--night-ink);padding:22px 20px;display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:9/16}
+.statpanel .eyebrow{color:var(--night-mute);font-size:10px}
+.statpanel strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1}
+.statpanel small{font-size:12px;color:var(--night-mute)}
+.statpanel ul{list-style:none;font-size:13px;border-top:1px solid rgba(239,232,220,.18);padding-top:12px}
+.statpanel li{display:flex;justify-content:space-between;padding:3px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:64px 48px}
+.grid .card .media{aspect-ratio:1/1;margin-bottom:22px}
+.typecard{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:26px 28px;background:linear-gradient(140deg,#EFE3DC,#E3D6CB)}
+.typecard .x{font-family:var(--serif);font-size:clamp(28px,3.3vw,40px);line-height:1.02}
+.typecard .x i{color:var(--accent)}
+.typecard .row{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+
+/* about */
+#about{padding:96px 0;background:var(--paper)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.about .lead{font-family:var(--serif);font-size:30px;line-height:1.25}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:36px 40px;margin-top:8px}
+.facts h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.facts li{list-style:none;font-size:15px;margin-bottom:10px;line-height:1.45}
+.facts li small{display:block;color:var(--mute);font-size:13px}
+
+/* contact */
+#contact{padding:96px 0 72px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end}
+.contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6vw,76px);line-height:1}
+.contact .links{border-top:1px solid var(--ink)}
+.contact .links div{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+footer{border-top:1px solid var(--line);padding:24px 0;font-size:13px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* case overlay */
+.case{position:fixed;inset:0;z-index:50;background:var(--ivory);overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.case.open{opacity:1;visibility:visible}
+.case-bar{position:sticky;top:0;z-index:2;background:rgba(245,240,232,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.case-bar .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;font-size:14px}
+.case-bar button{font-weight:500}
+.case-bar button:hover{color:var(--accent)}
+.case-body{padding:56px 0 96px}
+.case h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.5vw,84px);line-height:1;margin:14px 0 22px;max-width:15em}
+.case .sum{font-size:19px;max-width:38em;color:#3B342E}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:40px 0 8px;padding:20px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.meta dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+.meta dd{font-size:15px;line-height:1.45}
+.lead-img{margin:40px 0 8px}
+.block{display:grid;grid-template-columns:220px 1fr;gap:40px;padding:40px 0;border-bottom:1px solid var(--line)}
+.block:last-of-type{border-bottom:0}
+.block > h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;padding-top:6px}
+.block p{max-width:40em;margin-bottom:14px}
+.block ul{list-style:none;max-width:42em}
+.block li{padding:10px 0 10px 22px;position:relative;border-bottom:1px solid var(--line)}
+.block li:last-child{border-bottom:0}
+.block li::before{content:"";position:absolute;left:0;top:21px;width:10px;height:1px;background:var(--accent)}
+.block li.team::before{background:#B4A898}
+.block .sub{font-size:13px;color:var(--mute);margin:22px 0 6px;letter-spacing:.04em}
+.gallery{display:grid;gap:14px;margin:6px 0 4px}
+.g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.tall img,.tall figure img{aspect-ratio:9/16;object-fit:cover}
+.tall figure.cover img,figure.cover img{aspect-ratio:auto;object-fit:initial;border-radius:6px}
+.gallery.tall{align-items:start}
+.rn-media .tall{aspect-ratio:4/5;overflow:hidden}
+.evidence{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:start;margin-top:28px;max-width:46em}
+.stats.s2{grid-template-columns:repeat(2,1fr)}
+figure{margin:0}
+figure img{width:100%;cursor:zoom-in;background:var(--paper);box-shadow:0 1px 0 var(--line)}
+figcaption{font-size:13px;color:var(--mute);margin-top:8px;line-height:1.45}
+.cap{font-size:13px;color:var(--mute);margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin:4px 0 8px;max-width:44em}
+.stats div{padding:18px 16px 18px 0}
+.stats strong{display:block;font-family:var(--serif);font-weight:400;font-size:44px;line-height:1}
+.stats small{font-size:13px;color:var(--mute)}
+.note{background:var(--paper);border-left:2px solid var(--accent);padding:14px 18px;font-size:14px;color:#3B342E;max-width:44em}
+.badge{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;background:var(--ink);color:var(--ivory);padding:3px 8px;border-radius:2px;vertical-align:middle;margin-left:8px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--ink);counter-reset:s}
+.steps div{padding:16px 14px 6px 0;font-size:14px;line-height:1.45;counter-increment:s}
+.steps div::before{content:"0" counter(s);display:block;font-family:var(--serif);font-size:26px;color:var(--accent);margin-bottom:6px}
+.steps b{display:block;font-weight:600;margin-bottom:2px}
+.case-next{display:flex;justify-content:space-between;gap:24px;padding-top:48px;border-top:1px solid var(--ink)}
+.case-next button{text-align:left;max-width:48%}
+.case-next button:last-child{text-align:right;margin-left:auto}
+.case-next small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.case-next span{font-family:var(--serif);font-size:28px;line-height:1.1}
+.case-next button:hover span{color:var(--accent)}
+
+
+/* RedNote cover cards */
+.xhs-fig{margin:0}
+.xhs{container-type:inline-size;aspect-ratio:9/16;display:flex;flex-direction:column;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 10px 26px -18px rgba(35,30,26,.45);font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",var(--sans);color:#333}
+.xhs-ph{flex:1;min-height:0;overflow:hidden}
+.xhs-ph img{width:100%;height:100%;object-fit:cover;object-position:center bottom;cursor:zoom-in;box-shadow:none;transform:none!important}
+.xhs-body{padding:5.5cqw 6cqw 5cqw}
+.xhs-t{font-size:7.4cqw;line-height:1.38;font-weight:500;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0}
+.xhs-meta{display:flex;align-items:center;gap:3cqw;margin-top:4cqw}
+.xhs .xhs-av{width:11cqw!important;height:11cqw!important;transform:none!important;border-radius:50%;object-fit:cover;flex:none;box-shadow:none;cursor:default}
+.xhs-u{flex:1;min-width:0;font-size:6cqw;color:#666;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xhs-u small{display:block;font-size:5.2cqw;color:#aaa}
+.xhs-l{display:flex;align-items:center;gap:1.5cqw;font-size:6.6cqw;color:#555}
+.xhs-l svg{width:7.5cqw;height:7.5cqw}
+.card .rn-media .xhs-fig{background:none}
+
+/* charts */
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:40px 48px;margin:30px 0 8px}
+.chart h3{font-size:14px;font-weight:600;margin:0}
+.chart-note{font-size:12px;color:var(--mute);margin:2px 0 14px}
+.hb{display:grid;grid-template-columns:104px 1fr 40px;align-items:center;gap:10px;padding:5px 0;position:relative}
+.hb-k{font-size:13px;color:#3B342E}
+.hb-track{height:10px;display:block}
+.hb-bar{display:block;height:100%;background:var(--accent);border-radius:0 4px 4px 0;transition:opacity .15s}
+.hb-v{font-size:13px;color:var(--mute);text-align:right;font-variant-numeric:tabular-nums}
+.vb-wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;height:170px;align-items:end;border-bottom:1px solid var(--line)}
+.vb{display:flex;flex-direction:column;align-items:center;height:100%;position:relative}
+.vb-v{font-size:12px;color:var(--mute);margin-bottom:4px;font-variant-numeric:tabular-nums}
+.vb-col{flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center}
+.vb-bar{display:block;width:60%;background:var(--accent);border-radius:4px 4px 0 0;min-height:2px;transition:opacity .15s}
+.vb-k{position:absolute;bottom:-22px;font-size:12px;color:var(--mute)}
+.chart:has(.vb){padding-bottom:22px}
+.hb:hover .hb-bar,.vb:hover .vb-bar{opacity:.75}
+[data-tip]:hover::after{content:attr(data-tip);position:absolute;left:50%;top:-6px;transform:translate(-50%,-100%);background:var(--ink);color:var(--ivory);font-size:12px;padding:4px 8px;border-radius:3px;white-space:nowrap;pointer-events:none;z-index:3}
+
+
+/* color & brand accents */
+.b{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--accent);letter-spacing:.02em}
+h1 .b,h3 .b,.case-next .b{font-family:inherit;font-weight:inherit;letter-spacing:0;font-style:italic}
+.statline{font-size:14px;color:var(--mute);margin-top:18px;letter-spacing:.01em}
+.statline i{font-style:normal;color:var(--rose);margin:0 4px}
+
+
+.sec-head h2,.case h1,.card h3,.contact h2,.about .lead{color:var(--ink)}
+.eyebrow{color:var(--rose)}
+.card .tags{color:var(--rose)}
+.block > h2{color:var(--accent)}
+.meta dt{color:var(--rose)}
+.meta{border-top-color:var(--accent)}
+.stats{border-top-color:var(--accent)}
+.stats strong{color:var(--accent)}
+.sec-head{border-bottom-color:var(--accent)}
+.card .more{border-bottom-color:var(--accent);color:var(--ink)}
+.block li::before{background:var(--rose)}
+.note{background:var(--blush)}
+.facts h4{color:var(--accent)}
+.proof strong{color:#F3D9CF}
+.steps div::before{color:var(--rose)}
+
+.chart h3{color:var(--ink)}
+
+
+/* RedNote feature as one block */
+.card.feature{background:var(--blush);border-radius:14px;padding:44px 48px;border-bottom:0;gap:56px;transition:background .25s}
+.card.feature:hover{background:#EED8CE}
+.feature .rn-media{display:flex;justify-content:center;align-items:center;gap:0;padding:8px 0;pointer-events:none}
+.feature .rn-media .xhs-fig{width:34%;flex:none;transition:transform .35s ease}
+.feature .rn-media .xhs-fig:nth-child(1){transform:rotate(-4deg) translateX(14%)}
+.feature .rn-media .xhs-fig:nth-child(2){transform:translateY(-4%);z-index:2;width:36%}
+.feature .rn-media .xhs-fig:nth-child(3){transform:rotate(4deg) translateX(-14%)}
+.card.feature:hover .rn-media .xhs-fig:nth-child(1){transform:rotate(-6deg) translateX(10%)}
+.card.feature:hover .rn-media .xhs-fig:nth-child(3){transform:rotate(6deg) translateX(-10%)}
+.feature .xhs{box-shadow:0 18px 40px -20px rgba(43,33,29,.55)}
+.card.feature .media img{transform:none!important}
+@media (max-width:560px){.card.feature{padding:28px 18px}.feature .rn-media .xhs-fig{width:40%}.feature .rn-media .xhs-fig:nth-child(2){width:42%}.feature .rn-media .xhs-fig:nth-child(1){transform:rotate(-4deg) translateX(22%)}.feature .rn-media .xhs-fig:nth-child(3){transform:rotate(4deg) translateX(-22%)}}
+.card.feature .media.rn-media{overflow:visible}
+
+
+.bb-media{background:#FFCEEF}
+.bb-art{display:block;width:100%;height:100%}
+.bb-pair{display:grid;grid-template-columns:1.33fr 1fr;gap:20px;align-items:end;max-width:760px}
+.bb-pair svg{display:block;width:100%;height:auto;border-radius:12px}
+.bb-pair .bb-phone{border-radius:28px;max-width:320px}
+.bbj{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:j;max-width:none!important;background:#FCE7BC;border-radius:14px;padding:26px 20px;position:relative}
+.bbj li{border:0!important;padding:0 10px!important;text-align:center;position:relative;counter-increment:j}
+.bbj li::before{display:none}
+.bbj li:not(:last-child)::after{content:"";position:absolute;top:32px;left:calc(50% + 36px);right:calc(-50% + 36px);border-top:2px dotted #E6883B}
+.bbj-ic{display:inline-flex;width:64px;height:64px;border-radius:50%;background:#fff;color:#001DA3;align-items:center;justify-content:center;margin-bottom:12px}
+.bbj li:nth-child(2) .bbj-ic{background:#001DA3;color:#FFCEEF}
+.bbj-ic svg{width:44px;height:44px}
+.bbj-t{display:block;font-size:13px;line-height:1.45;color:#3B342E}
+.bbj-t b{display:block;font-family:"Instrument Sans",var(--sans);font-size:15px;color:#001DA3;margin-bottom:4px}
+.bbj-t b::before{content:"0" counter(j) "  ";font-family:"Source Code Pro",monospace;font-size:12px;color:#E6883B}
+@media (max-width:760px){
+  .bb-pair{grid-template-columns:1fr;max-width:420px}
+  .bb-pair .bb-phone{max-width:280px;margin:0 auto}
+  .bbj{grid-template-columns:1fr;padding:22px 18px}
+  .bbj li{display:grid;grid-template-columns:56px 1fr;gap:14px;text-align:left;padding:0 0 18px!important;align-items:start}
+  .bbj li:last-child{padding-bottom:0!important}
+  .bbj-ic{width:56px;height:56px;margin:0}
+  .bbj li:not(:last-child)::after{top:60px;bottom:2px;left:27px;right:auto;border-top:0;border-left:2px dotted #E6883B}
+}
+
+
+/* about / experience / skills */
+#about{padding:96px 0;background:var(--ivory)}
+.hi{font-family:var(--serif);font-weight:400;font-size:clamp(44px,5.5vw,68px);line-height:1;color:var(--ink)}
+.hi em{color:var(--accent)}
+.bio p{font-size:17px;max-width:36em;margin-bottom:16px}
+.edu{margin-top:28px;border-top:1px solid var(--accent)}
+.edu div{padding:14px 0;border-bottom:1px solid var(--line)}
+.edu b{display:block;font-weight:600;color:var(--ink);font-size:15px}
+.edu span{font-size:13px;color:var(--mute)}
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ivory);padding:18px 0}
+.mq-track{display:flex;gap:56px;width:max-content;animation:mq 40s linear infinite}
+.mq-track span{font-family:var(--serif);font-size:28px;color:var(--rose);white-space:nowrap}
+.mq-track span::after{content:"✦";font-size:12px;color:var(--accent);margin-left:56px;vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}}
+#experience{padding:88px 0 40px}
+.xp-item{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--line)}
+.xp-item:last-child{border-bottom:0}
+.xp-when{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);padding-top:8px}
+.xp-item h3{font-family:var(--serif);font-weight:400;font-size:32px;line-height:1.1;color:var(--ink)}
+.xp-org{font-size:14px;color:var(--mute);margin:6px 0 12px}
+.xp-item ul{list-style:none;max-width:44em}
+.xp-item li{position:relative;padding:5px 0 5px 22px;font-size:15px}
+.xp-item li::before{content:"";position:absolute;left:0;top:16px;width:10px;height:1px;background:var(--rose)}
+.xp-link{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px}
+.xp-link:hover{color:var(--accent)}
+#skills{padding:56px 0 88px;background:var(--blush)}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.skills h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #DFC6BA}
+.skills ul{list-style:none}
+.skills li{font-size:15px;padding:5px 0;line-height:1.45}
+.skills li small{display:block;font-size:12px;color:var(--mute)}
+.avail{margin-top:36px;font-size:14px;color:var(--accent);font-weight:600}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:-16px 0 36px}
+.filters button{font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;color:var(--body);background:transparent;transition:all .2s}
+.filters button:hover{border-color:var(--rose)}
+.filters button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+#cards .card[hidden]{display:none}
+@media (max-width:900px){
+  .xp-item{grid-template-columns:1fr;gap:8px}
+  .skills{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){.skills{grid-template-columns:1fr}.mq-track span{font-size:22px}}
+
+
+.xp-sub{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,42px);color:var(--ink);margin:56px 0 4px;padding-bottom:14px;border-bottom:1px solid var(--accent)}
+.lang{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:36px}
+.lang h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #DFC6BA}
+.lang p{font-size:15px}
+@media (max-width:560px){.lang{grid-template-columns:1fr}}
+
+
+.hero .role{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.4vw,28px);line-height:1.25;color:#F3D9CF;margin:-8px 0 20px;max-width:20em}
+.ga{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;max-width:52em}
+.ga dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
+.ga dd{font-size:16px;line-height:1.5;color:var(--ink)}
+@media (max-width:560px){.ga{grid-template-columns:1fr;gap:18px}}
+
+
+.tk{background:var(--blush);border-left:2px solid var(--accent);padding:18px 22px;max-width:46em}
+.tk p{margin-bottom:10px}.tk p:last-child{margin-bottom:0}
+.tk ul{margin:6px 0 12px}
+.tk li{border-bottom:0!important;padding:6px 0 6px 22px!important}
+
+
+/* focal points */
+.case-body{padding:0 0 96px}
+.case-hero{background:var(--t);color:#F6EEE8;padding:64px 0 56px;margin-bottom:8px}
+.ch-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:end}
+.case-hero .eyebrow{color:rgba(246,238,232,.7)}
+.case .case-hero h1{color:#fff;margin:12px 0 18px}
+.case-hero h1 .b{color:#F7C9D8}
+.case-hero .sum{color:rgba(246,238,232,.88)}
+.ch-big{border-left:1px solid rgba(246,238,232,.3);padding-left:28px}
+.ch-big strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(84px,11vw,150px);line-height:.85;color:#fff}
+.ch-big span{display:block;margin-top:12px;font-size:15px;color:rgba(246,238,232,.8);max-width:16em}
+.case .meta{margin-top:32px}
+.chipwrap{position:relative}
+.chip{position:absolute;top:14px;left:14px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;letter-spacing:.04em;padding:6px 12px;border-radius:999px}
+.quote{background:var(--night);color:var(--night-ink);padding:110px 0}
+.quote .eyebrow{color:#D9A898}
+.quote blockquote{font-family:var(--serif);font-size:clamp(40px,5.6vw,76px);line-height:1.05;max-width:15em;margin:18px 0 30px;color:#fff}
+.quote blockquote em{color:#D9A898}
+.xp-link.light{color:#F3D9CF;border-color:#D9A898}
+.tk p:first-child{font-family:var(--serif);font-size:clamp(22px,2.4vw,28px);line-height:1.25;color:var(--ink)}
+@media (max-width:900px){.ch-grid{grid-template-columns:1fr;gap:28px}.ch-big{border-left:0;border-top:1px solid rgba(246,238,232,.3);padding:20px 0 0}.case-hero{padding:44px 0 40px}.quote{padding:72px 0}}
+
+
+/* RedNote block: warm dark */
+.card.feature{background:var(--night)!important;color:var(--night-ink)}
+.card.feature:hover{background:#352F28!important}
+.card.feature h3{color:#fff}
+.card.feature .tags{color:#D9A898}
+.card.feature .hook{color:#DCD3C6}
+.card.feature .hook b{color:#fff}
+.card.feature .hook .b{color:#F3B8A6}
+.card.feature .num{color:#D9A898}
+.card.feature .more{color:#F3D9CF;border-color:#D9A898}
+.card.feature .xhs{box-shadow:0 22px 44px -18px rgba(0,0,0,.7)}
+
+/* phone: less scrolling */
+@media (max-width:560px){
+  .g3.tall,.gallery.g3:has(.xhs-fig){grid-template-columns:repeat(3,1fr);gap:8px}
+  .g4.tall{grid-template-columns:repeat(4,1fr);gap:6px}
+  .gallery.tall figcaption,.gallery:has(.xhs-fig) figcaption{font-size:11px;margin-top:4px}
+  .gallery.g2{grid-template-columns:1fr 1fr;gap:8px}
+  .gallery.g2 figcaption{font-size:11px}
+  .bb-pair{grid-template-columns:1.2fr 1fr!important;gap:10px;max-width:none}
+  .bb-pair .bb-phone{max-width:none;border-radius:16px}
+  .bb-pair figcaption{font-size:11px}
+  .grid{gap:28px}
+  .grid .card{display:grid;grid-template-columns:118px 1fr;gap:0 16px;align-items:start}
+  .grid .card .chipwrap,.grid .card > .media{grid-row:1/6;margin:0}
+  .grid .card .media{margin-bottom:0!important}
+  .grid .card h3{font-size:22px;margin:2px 0 6px}
+  .grid .card .num{font-size:15px}
+  .grid .card .tags{font-size:10px}
+  .grid .card .hook{font-size:13px;margin-top:8px}
+  .grid .card .more{margin-top:8px}
+  .chip{top:6px;left:6px;font-size:9px;padding:3px 7px}
+  .case-hero{padding:30px 0 28px}
+  .case .case-hero h1{font-size:38px;margin:8px 0 12px}
+  .case-hero .sum{font-size:15px;line-height:1.55}
+  .ch-big{display:flex;align-items:center;gap:14px;padding-top:16px}
+  .ch-big strong{font-size:56px}
+  .ch-big span{margin:0;font-size:13px}
+  .block{padding:28px 0}
+  .lead-img{margin:24px 0 4px}
+  .stats strong{font-size:34px}
+  .feature .rn-media{padding:0}
+}
+
+
+/* petal pink accents */
+:root{--petal:#F7D7DD}
+.card.feature{background:var(--petal)!important;color:var(--body)}
+.card.feature:hover{background:#F2C9D1!important}
+.card.feature h3{color:var(--ink)}
+.card.feature .tags,.card.feature .num{color:var(--accent)}
+.card.feature .hook{color:var(--body)}
+.card.feature .hook b{color:var(--ink)}
+.card.feature .hook .b{color:var(--accent)}
+.card.feature .more{color:var(--ink);border-color:var(--accent)}
+.card.feature .xhs{box-shadow:0 18px 36px -18px rgba(90,60,40,.45)}
+.case-hero.light{color:var(--body)}
+.case-hero.light .eyebrow{color:var(--accent)}
+.case .case-hero.light h1{color:var(--ink)}
+.case-hero.light .sum{color:var(--body)}
+.case-hero.light .ch-big{border-color:rgba(43,33,29,.2)}
+.case-hero.light .ch-big strong{color:var(--accent)}
+.case-hero.light .ch-big span{color:var(--mute)}
+
+
+.also{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:46em}
+.also > div{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center}
+.also p{font-size:15px;margin:0}
+.also .cap{display:block;margin-top:4px}
+@media (max-width:560px){.also{grid-template-columns:1fr;gap:16px}.also > div{grid-template-columns:88px 1fr}}
+
+.also .tr{display:block;font-size:13px;color:var(--mute);margin-top:4px}
+figcaption em{font-style:italic;color:var(--body)}
+
+/* Confluo feature flow */
+.cf-flow{display:grid;grid-template-columns:170px 40px 1fr;align-items:stretch;gap:0;margin:22px 0 10px}
+.cf-snap{background:#1C2B4F;color:#fff;border-radius:14px;padding:22px 18px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.cf-snap small{color:rgba(255,255,255,.7);font-size:13px;line-height:1.4}
+.cf-snap b{font-size:18px}
+.cf-snap .cf-ic{background:rgba(255,255,255,.12);color:#9FE3C4}
+.cf-arrow{display:flex;align-items:center;justify-content:center;font-size:22px;color:#1C2B4F}
+.cf-feats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cf-f{background:#EAF0F7;border-radius:14px;padding:18px 16px;display:flex;flex-direction:column;gap:6px}
+.cf-f b{font-size:15px;color:#1C2B4F}
+.cf-f small{font-size:13px;line-height:1.45;color:#4A4F5C}
+.cf-ic{display:inline-flex;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center;background:#fff;color:#1C2B4F;margin-bottom:6px}
+.cf-ic svg{width:28px;height:28px}
+.g5{grid-template-columns:repeat(5,1fr);gap:8px}
+.g5 figcaption{font-size:11px;margin-top:4px}
+@media (max-width:900px){.cf-flow{grid-template-columns:1fr;gap:8px}.cf-arrow{transform:rotate(90deg);height:28px}.cf-feats{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.g5{grid-template-columns:repeat(5,1fr);gap:4px}.g5 figcaption{display:none}.cf-f{padding:14px 12px}}
+
+
+/* Confluo lively flow */
+.cf2{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:center;margin:22px 0 8px}
+.cf2-phone{text-align:center}
+.cf-phone{width:100%;max-width:210px;height:auto;filter:drop-shadow(0 18px 30px rgba(28,43,79,.25))}
+.cf2-phone p{font-size:13px;color:var(--mute);margin-top:10px;line-height:1.4}
+.cf2-phone b{color:#1C2B4F;font-size:15px}
+.cf-scan{animation:scan 2.6s ease-in-out infinite}
+@keyframes scan{0%,100%{transform:translateY(0)}50%{transform:translateY(238px)}}
+@media (prefers-reduced-motion:reduce){.cf-scan{animation:none}}
+.cf2-feats{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative}
+.cf2-f{background:#EAF0F7;border-radius:16px;padding:16px 16px 14px;position:relative;display:flex;flex-direction:column;gap:8px}
+.cf2-f > b{font-size:16px;color:#1C2B4F}
+.cf2-f small{font-size:13px;line-height:1.45;color:#4A4F5C}
+.tag{position:absolute;top:14px;right:14px;font-size:10px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;border:1px solid #B9C4D4;color:#4A5A7A;background:#fff}
+.tag.new{background:#2FBF84;border-color:#2FBF84;color:#fff}
+.mini{background:#fff;border-radius:12px;padding:12px;min-height:74px;display:flex;align-items:center}
+.mini.split{gap:8px;flex-wrap:wrap}
+.mini.split span{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#1C2B4F}
+.mini.split i{display:inline-flex;width:24px;height:24px;border-radius:50%;background:#1C2B4F;color:#fff;font-style:normal;font-size:11px;align-items:center;justify-content:center}
+.mini.split span:nth-child(2) i{background:#2FBF84}.mini.split span:nth-child(3) i{background:#F2A65A}
+.mini.split em{margin-left:auto;font-style:normal;background:#1C2B4F;color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.mini.earn{gap:10px}
+.mini.earn strong{font-size:30px;line-height:1;color:#2FBF84;font-family:var(--sans)}
+.mini.earn span{font-size:12px;color:#4A4F5C;line-height:1.3}
+.mini.track{gap:12px}
+.mini.track .bars{display:flex;align-items:flex-end;gap:5px;height:46px}
+.mini.track .bars i{display:block;width:12px;background:#1C2B4F;border-radius:3px 3px 0 0}
+.mini.track .bars i:last-child{background:#F2A65A}
+.mini.track .bubble{font-size:12px;background:#1C2B4F;color:#fff;padding:8px 10px;border-radius:12px 12px 12px 2px;line-height:1.3}
+.mini.save{flex-direction:column;align-items:stretch;justify-content:center;gap:6px}
+.mini.save .lbl{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#1C2B4F}
+.mini.save .lbl em{font-style:normal;color:#2FBF84}
+.mini.save .lbl.sm{font-weight:500;color:#6B7487}
+.mini.save .bar{height:8px;background:#EAF0F7;border-radius:4px;overflow:hidden}
+.mini.save .bar i{display:block;height:100%;background:#2FBF84;border-radius:4px}
+@media (max-width:760px){.cf2{grid-template-columns:1fr}.cf-phone{max-width:150px}}
+@media (max-width:560px){
+  .cf2-feats{gap:8px}
+  .cf2-f{padding:12px 10px 10px;gap:6px}
+  .cf2-f > b{font-size:14px;margin-top:18px}
+  .tag{top:10px;left:10px;right:auto;font-size:9px;padding:2px 6px}
+  .cf2-f small{font-size:11.5px}
+  .mini{padding:8px;min-height:58px}
+  .mini.split span{font-size:0}.mini.split i{width:20px;height:20px;font-size:10px}.mini.split em{font-size:10px;padding:4px 8px}
+  .mini.earn strong{font-size:22px}.mini.earn span{font-size:10px}
+  .mini.track{gap:6px}.mini.track .bars{height:34px}.mini.track .bars i{width:8px}.mini.track .bubble{font-size:10px;padding:5px 7px}
+  .mini.save .lbl{font-size:10px}
+}
+
+
+.vs{max-width:44em;margin-bottom:18px;padding:22px 24px;background:#EAF0F7;border-radius:14px}
+.vs-row{display:grid;grid-template-columns:130px 1fr 64px;align-items:center;gap:14px;padding:8px 0}
+.vs-k{font-size:15px;font-weight:600;color:#1C2B4F;line-height:1.2}
+.vs-k small{display:block;font-size:12px;font-weight:400;color:#6B7487}
+.vs-track{height:26px;background:#fff;border-radius:0 6px 6px 0;display:block}
+.vs-bar{display:block;height:100%;background:#2FBF84;border-radius:0 6px 6px 0;min-width:3px}
+.vs-bar.off{background:#9AA6B8}
+.vs-v{font-family:var(--serif);font-size:30px;color:#1C2B4F;text-align:right;line-height:1}
+.vs-note{font-size:13px;color:#4A4F5C;margin:10px 0 0!important}
+.vs-note b{color:#1C2B4F}
+@media (max-width:560px){.vs{padding:16px}.vs-row{grid-template-columns:86px 1fr 48px;gap:8px}.vs-v{font-size:22px}.vs-k{font-size:13px}}
+
+.quote-sub{font-size:17px;color:#DCD3C6;max-width:34em;margin:-8px 0 26px}
+.quote-links{display:flex;gap:28px;flex-wrap:wrap}
+.lo-media{background:#F3E2E3}
+.lo-art{display:block;width:100%;height:100%}
+
+/* L'Oreal scent pyramid */
+.pyramid{max-width:46em;margin-top:18px;display:grid;gap:10px}
+.py-row{display:grid;grid-template-columns:120px 1fr auto;gap:18px;align-items:center;background:#F7ECEE;border-radius:14px;padding:12px 16px 12px 12px}
+.py-shape{width:120px;height:68px}
+.py-shape path{fill:#4E2F3C}
+.py-mid path{fill:#8A5A6A}
+.py-base path{fill:#C7A0AC}
+.py-txt{display:flex;flex-direction:column;gap:2px}
+.py-note{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B0647A;font-weight:600}
+.py-txt b{font-size:16px;color:#4E2F3C}
+.py-txt small{font-size:13px;color:#5E4B52;line-height:1.45}
+.py-tag{font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;background:#4E2F3C;color:#fff;white-space:nowrap}
+.py-tag.team{background:transparent;color:#8A5A6A;border:1px solid #C7A0AC}
+.lo-team{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start;max-width:52em}
+.lo-loop{border-radius:14px;overflow:hidden}
+.lo-loop .lo-art{display:block;width:100%;height:auto}
+.lo-status{display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;max-width:46em}
+@media (max-width:760px){.lo-team{grid-template-columns:1fr}.lo-loop{max-width:320px}.lo-status{grid-template-columns:1fr 140px;gap:14px}}
+@media (max-width:560px){.py-row{grid-template-columns:64px 1fr;gap:12px;padding:10px}.py-shape{width:64px;height:36px}.py-tag{grid-column:2;justify-self:start}.py-txt b{font-size:14px}.py-txt small{font-size:12px}}
+
+
+/* L'Oreal luxe theme */
+.case[data-theme=loreal]{background:#F7F3EC}
+.case[data-theme=loreal] .case-bar{background:rgba(247,243,236,.95)}
+[data-theme=loreal] .case-hero{background:radial-gradient(120% 140% at 85% 30%,#2A211E 0%,#15110F 60%)}
+[data-theme=loreal] .case-hero .eyebrow{color:#B8975A}
+[data-theme=loreal] .case-hero h1{font-style:italic;letter-spacing:.005em}
+[data-theme=loreal] .ch-img{justify-self:end;width:min(320px,100%);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px #B8975A,0 0 0 10px rgba(184,151,90,.12),0 30px 60px -20px rgba(0,0,0,.7)}
+[data-theme=loreal] .ch-img img{width:100%;height:100%;object-fit:cover}
+[data-theme=loreal] .block > h2,[data-theme=loreal] .meta dt,[data-theme=loreal] .ga dt{color:#9C7F49}
+[data-theme=loreal] .meta{border-top-color:#B8975A}
+[data-theme=loreal] .meta .b{color:#9C7F49}
+[data-theme=loreal] .block li::before{background:#B8975A}
+[data-theme=loreal] .tk{background:#15110F;border-left-color:#B8975A;color:#D9CFC0}
+[data-theme=loreal] .tk p:first-child{color:#F3EBDD;font-style:italic}
+.lx-notes{display:grid;grid-template-columns:repeat(3,1fr);background:#15110F;border-radius:4px;margin-top:20px;max-width:52em}
+.lx-n{padding:30px 24px 28px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.lx-n + .lx-n{border-left:1px solid rgba(184,151,90,.3)}
+.lx-n svg{width:64px;height:64px;margin-bottom:8px}
+.lx-k{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#B8975A}
+.lx-n b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:28px;color:#F3EBDD;line-height:1.1}
+.lx-n small{font-size:13px;color:#BFB3A2;line-height:1.5;max-width:18em}
+.lx-foot{font-size:12px;color:var(--mute);font-style:italic;margin-top:12px}
+.lx-cert{max-width:300px}
+@media (max-width:760px){[data-theme=loreal] .ch-img{justify-self:start;width:180px}.lx-notes{grid-template-columns:1fr}.lx-n + .lx-n{border-left:0;border-top:1px solid rgba(184,151,90,.3)}.lx-n{flex-direction:row;flex-wrap:wrap;text-align:left;align-items:center;column-gap:14px;padding:18px}.lx-n svg{width:44px;height:44px;margin:0}.lx-n small{flex-basis:100%;max-width:none}}
+
+
+.bb-photo{position:relative}
+.bb-x.em-x{background:linear-gradient(0deg,rgba(46,33,71,.9),rgba(46,33,71,0))}
+.bb-x{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 14px;background:linear-gradient(0deg,rgba(0,29,163,.85),rgba(0,29,163,0));color:#fff;font-family:"Source Code Pro",monospace;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.bb-ins{display:grid;grid-template-columns:1fr 220px;gap:28px;align-items:start;max-width:46em}
+@media (max-width:560px){.bb-ins{grid-template-columns:1fr 110px;gap:14px}.bb-x{font-size:9px;padding:20px 8px 8px}}
+
+
+.bb-pair{grid-template-columns:2fr 1fr!important;align-items:end!important;max-width:900px!important}
+.bb-pair svg{border-radius:0!important;background:none}
+.bb-pair .bb-tab{width:100%;height:auto}
+.bb-pair .bb-phone{max-width:260px;border-radius:0!important}
+.bb-scanline{animation:bbscan 2.8s ease-in-out infinite}
+@keyframes bbscan{0%,100%{transform:translateY(0)}50%{transform:translateY(300px)}}
+@media (prefers-reduced-motion:reduce){.bb-scanline{animation:none}}
+@media (max-width:560px){.bb-pair{grid-template-columns:1.9fr 1fr!important;gap:8px!important}}
+
+
+/* Biotech page polish */
+[data-theme=biotech] .ch-img{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -24px rgba(0,0,0,.6),0 0 0 6px rgba(255,206,239,.25)}
+[data-theme=biotech] .ch-img img{width:100%;height:100%;object-fit:cover}
+[data-theme=biotech] .case-hero h1 .b{color:#FFCEEF}
+[data-theme=biotech] .block > h2,[data-theme=biotech] .meta dt,[data-theme=biotech] .ga dt{color:#001DA3}
+[data-theme=biotech] .meta{border-top-color:#001DA3}
+[data-theme=biotech] .tk{background:#FFE6F6;border-left-color:#001DA3}
+[data-theme=biotech] .tk p:first-child{color:#001DA3}
+.bb-zones{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:46em;margin-top:16px}
+.bb-z{border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.bb-z.in{background:#001DA3;color:#fff}.bb-z.out{background:#FCE7BC;color:#212121}
+.bb-zi{width:44px;height:44px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;margin-bottom:4px}
+.bb-z.in .bb-zi{background:rgba(255,255,255,.14);color:#FFCEEF}.bb-z.out .bb-zi{background:#fff;color:#E6883B}
+.bb-zi svg{width:28px;height:28px}
+.bb-zk{font-family:"Source Code Pro",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.bb-z b{font-size:18px}
+.bb-z small{font-size:13px;line-height:1.5;opacity:.9}
+.bb-swap{max-width:46em;margin-top:12px;border:1.5px dashed #FF7CE5;border-radius:16px;padding:14px 16px;display:grid;gap:8px}
+.bb-swk{font-family:"Source Code Pro",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#C0379F}
+.bb-swap div{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px}
+.bb-swap b{font-weight:600;padding:6px 12px;border-radius:999px}
+.bb-swap b.cp{background:#FCE7BC;color:#8A4A12}.bb-swap b.bt{background:#FFCEEF;color:#001DA3}
+.bb-swap i{font-style:normal;color:#C0379F;font-weight:700}
+.bbj .kpi{display:inline-block;margin-top:8px;font-style:normal;font-family:"Source Code Pro",monospace;font-size:10.5px;color:#001DA3;background:#fff;border-radius:999px;padding:3px 8px;line-height:1.35}
+@media (max-width:760px){[data-theme=biotech] .ch-img{justify-self:start;width:170px}}
+@media (max-width:560px){.bb-zones{grid-template-columns:1fr 1fr;gap:8px}.bb-z{padding:12px}.bb-z b{font-size:15px}.bb-z small{font-size:11.5px}.bb-swap div{font-size:12px;gap:6px}.bb-swap b{padding:4px 9px}}
+
+
+/* Earthmeal page */
+.em-process{max-width:52em;margin:18px 0 0;background:#F7EFE4;border-radius:18px;padding:10px;overflow:hidden}
+.em-process img{display:block;width:100%;border-radius:12px}
+.em-process figcaption{padding:10px 6px 2px}
+[data-theme=earthmeal] .ch-img{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -24px rgba(0,0,0,.6),0 0 0 6px rgba(207,196,236,.2)}
+[data-theme=earthmeal] .ch-img img{width:100%;height:100%;object-fit:cover}
+[data-theme=earthmeal] .case-hero h1 .b{color:#F3D9A8}
+[data-theme=earthmeal] .block > h2,[data-theme=earthmeal] .meta dt,[data-theme=earthmeal] .ga dt{color:#6A4FB0}
+[data-theme=earthmeal] .meta{border-top-color:#6A4FB0}
+[data-theme=earthmeal] .tk{background:#EFEAF8;border-left-color:#6A4FB0}
+[data-theme=earthmeal] .tk p:first-child{color:#2E2147}
+.em-ticket{display:grid;grid-template-columns:repeat(3,1fr);max-width:46em;margin:16px 0;background:#2E2147;color:#F6EFE2;border-radius:14px;overflow:hidden}
+.em-ticket div{padding:14px 16px}
+.em-ticket div + div{border-left:2px dashed rgba(246,239,226,.3)}
+.em-ticket span{display:block;font-size:12px;opacity:.75}
+.em-ticket b{font-size:17px;color:#F3D9A8}
+.em-build{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;max-width:46em;background:#F6EFE2;border-radius:16px;padding:18px 22px}
+.em-jar{width:100%;height:auto}
+.em-h{font-weight:600;color:#2E2147;margin-bottom:8px!important}
+.em-layers{list-style:none;counter-reset:none;max-width:none!important}
+.em-layers li{display:grid;grid-template-columns:16px 26px 1fr;column-gap:8px;align-items:baseline;padding:7px 0!important;border-bottom:1px solid #E6DCC8!important}
+.em-layers li::before{display:none}
+.em-layers li i{width:14px;height:14px;border-radius:4px;grid-row:1/3;align-self:center;border:1px solid rgba(0,0,0,.08)}
+.em-n{font-size:11px;color:#6A4FB0;font-weight:700}
+.em-layers b{font-size:15px;color:#2E2147}
+.em-layers small{grid-column:3;font-size:13px;color:#5C5246}
+.em-take{font-size:13px;margin-top:10px!important;color:#5C5246}
+.small-thumbs{grid-template-columns:repeat(4,1fr)!important;max-width:46em;margin-top:12px}
+.small-thumbs figcaption{font-size:11px}
+.em-phases{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:52em}
+.em-phases div{background:#EFEAF8;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;position:relative}
+.em-phases div:not(:last-child)::after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:#6A4FB0;font-weight:700;z-index:2}
+.em-ph{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#6A4FB0;font-weight:700}
+.em-phases b{color:#2E2147;font-size:15px}
+.em-phases small{font-size:13px;color:#4A4458;line-height:1.45}
+.em-funnel{max-width:46em;display:grid;gap:6px;margin-bottom:8px}
+.em-funnel div{width:var(--w);min-width:200px;background:linear-gradient(90deg,#2E2147,#6A4FB0);color:#fff;border-radius:10px;padding:12px 16px;display:flex;align-items:baseline;gap:10px}
+.em-funnel b{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1;color:#F3D9A8}
+.em-funnel span{font-size:14px}
+@media (max-width:760px){[data-theme=earthmeal] .ch-img{justify-self:start;width:170px}.em-phases{grid-template-columns:1fr}.em-phases div:not(:last-child)::after{content:"↓";right:50%;top:auto;bottom:-14px;transform:none}}
+@media (max-width:560px){.em-ticket{grid-template-columns:1fr 1fr}.em-ticket div:nth-child(3){grid-column:1/-1;border-left:0;border-top:2px dashed rgba(246,239,226,.3)}.em-build{grid-template-columns:110px 1fr;gap:12px;padding:14px}.em-layers small{font-size:12px}.small-thumbs{grid-template-columns:repeat(3,1fr)!important}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(23,20,15,.94);display:none;align-items:center;justify-content:center;padding:4vw;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:100%;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+
+/* responsive */
+@media (max-width:900px){
+  .hero .photo{position:relative;width:100%;height:auto;aspect-ratio:4/3.4}
+  .hero .photo img{object-position:46% 22%}
+  .hero .photo::after{background:linear-gradient(0deg,var(--night) 0%,rgba(44,39,33,0) 40%)}
+  .hero .wrap{min-height:0;padding:0 0 64px;margin-top:-56px}
+  .feature,.about,.contact{grid-template-columns:1fr;gap:36px}
+  .grid{grid-template-columns:1fr;gap:56px}
+  .meta{grid-template-columns:1fr 1fr}
+  .block{grid-template-columns:1fr;gap:14px}
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .sec-head p{text-align:left}
+  .steps{grid-template-columns:1fr 1fr}
+  .charts{grid-template-columns:1fr}
+  .g4{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  :root{--wrap:calc(100% - 36px)}
+  nav.main{gap:18px}
+  .proof{gap:18px}
+  .proof strong{font-size:32px}
+  .proof small{font-size:12px}
+  .facts{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .g2{grid-template-columns:1fr}
+  .g3,.g4{grid-template-columns:1fr 1fr}
+  .evidence{grid-template-columns:1fr 150px;gap:16px}
+  .feature h3{font-size:38px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#home">Susan Lu</a>
+    <nav class="main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="photo"><img src="assets/portrait-wide.jpg" alt="Portrait of Susan Lu" width="1448" height="1086"></div>
+    <div class="wrap">
+      <div class="text">
+        <p class="eyebrow">Hsin-Yi (Susan) Lu · Los Angeles</p>
+        <h1>Susan <em>Lu</em></h1>
+        <p class="role">Content creator &amp; marketing analytics student, focused on beauty and fashion</p>
+        <p class="lede">MS Marketing at USC Marshall. Looking for Summer 2027 internships in brand, social and content marketing at beauty and fashion brands.</p>
+        <div class="proof">
+          <div><strong>300+</strong><small>short videos I scripted, shot and edited</small></div>
+          <div><strong>13K+</strong><small>followers on RedNote</small></div>
+          <div><strong>5+</strong><small>clothing and bag brand partnerships</small></div>
+        </div>
+        <div class="cta">
+          <a class="btn light" href="#work">See selected work ↓</a>
+          <a class="btn ghost" href="assets/Hsin-Yi_Susan_Lu_Resume.pdf" target="_blank" rel="noopener">View résumé (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Selected work</h2>
+        <p>Content, product ideas and campaign strategy. Open a project to see my part, what we made and the results.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" class="on" data-f="all">All</button>
+        <button type="button" data-f="social">Social &amp; content</button>
+        <button type="button" data-f="beauty">Beauty &amp; fashion</button>
+        <button type="button" data-f="strategy">Strategy &amp; research</button>
+        <button type="button" data-f="events">Events &amp; experiential</button>
+      </div>
+      <div id="cards"></div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <p class="eyebrow">What 300+ videos and a case competition taught me</p>
+      <blockquote>“Every tap starts with one question: <em>what's in it for me?</em>”</blockquote>
+      <p class="quote-sub">Something to learn, something to gain, or a “that's me too” moment. Whether it's a video title or a sign-up pitch, I lead with the viewer's benefit.</p>
+      <div class="quote-links"><a class="xp-link light" href="#case-rednote">See it on RedNote →</a><a class="xp-link light" href="#case-confluo">See it in Confluo →</a></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <p class="eyebrow" style="margin-bottom:16px">About</p>
+        <h2 class="hi">Hi, I'm <em>Susan.</em></h2>
+      </div>
+      <div class="bio">
+        <p>I grew up in Taiwan, studied public administration at National Chengchi University, and started making short videos on RedNote in 2024. Three hundred videos later, I'm at USC Marshall studying marketing analytics, learning to back the instinct I built as a creator with data.</p>
+        <p>I make everyday content: food, routine, and now student life in Los Angeles. My audience is mostly women aged 18 to 34, the same people beauty and fashion brands want to reach. That's where I want to work next, on brand, social and content teams.</p>
+        <div class="edu">
+          <div><b>MS Marketing, Marketing Analytics Track (STEM)</b><span>USC Marshall School of Business · Expected Dec 2027</span></div>
+          <div><b>BA Public Administration</b><span>National Chengchi University, Taiwan · 2021–2025 · GPA 3.89/4.3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="mq-track">
+    <span>USC Marshall</span><span>RedNote</span><span>StockFeel</span><span>L'Oréal Brandstorm 2026</span><span>Inside LVMH</span><span>REACH Creator Camp</span><span>Digital Marketing Lab</span><span>National Chengchi University</span>
+    <span>USC Marshall</span><span>RedNote</span><span>StockFeel</span><span>L'Oréal Brandstorm 2026</span><span>Inside LVMH</span><span>REACH Creator Camp</span><span>Digital Marketing Lab</span><span>National Chengchi University</span>
+  </div></div>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head"><h2>Experience</h2><p>Where I've worked and what I've built.</p></div>
+      <div class="xp">
+        <div class="xp-item">
+          <div class="xp-when">Mar 2024 – Present</div>
+          <div>
+            <h3>Content Creator</h3>
+            <p class="xp-org"><span class='b'>RedNote (Xiaohongshu)</span> · Freelance</p>
+            <ul><li>Ideated, scripted, filmed and edited 300+ short videos, and grew the channel to 13K+ followers by tracking engagement data</li><li>Partnered with 5+ clothing and bag brands, including a paid partnership with <span class='b'>ROBINMAY</span>, plus paid partnerships with beauty and lifestyle brands <span class='b'>Teddi Lab by Unichi</span>, <span class='b'>KaPod</span> and <span class='b'>JisuLife</span>; wrote scripts and coordinated with brand teams</li><li>My top-performing video reached 23.7K impressions with a 6.2% engagement rate</li><li>Audience: 90% women, about 80% aged 18–34</li></ul><a class="xp-link" href="#case-rednote">View my work →</a>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Sep 2024 – Jul 2025</div>
+          <div>
+            <h3>Marketing Intern</h3>
+            <p class="xp-org"><span class='b'>StockFeel</span> · Taipei, Taiwan · Hybrid</p>
+            <ul><li>Secured partnerships with 50+ organizations, including sponsorships, campus activations and branded event signage, for events of 50 to 300+ attendees</li><li>Drove a 200% membership increase in three months through content, engagement strategy and KPI tracking</li><li>Led StockFeel's first campus sponsorship event end to end, from planning and proposal writing to publication, bringing in 10+ schools within three days</li><li>Ran competitive research and applied SEO to grow organic reach and search visibility</li></ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Jun 2025 – Jul 2025</div>
+          <div>
+            <h3>Marketing Executive</h3>
+            <p class="xp-org"><span class='b'>Digital Marketing Lab</span> · National Chengchi University</p>
+            <ul><li>Managed the lab's social account with campus street-interview content</li><li>Designed an Instagram photo-frame campaign from audience input that became a graduation-season ritual</li></ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Fall 2026</div>
+          <div>
+            <h3>Creator Camp cohort</h3>
+            <p class="xp-org"><span class='b'>REACH</span> · Content creator and social media program</p>
+            
+          </div>
+        </div>
+      </div>
+      <h3 class="xp-sub">Leadership &amp; projects</h3>
+      <div class="xp">
+        <div class="xp-item">
+          <div class="xp-when">Oct 2026</div>
+          <div>
+            <h3>3rd Place, FLUO Fall Case Competition</h3>
+            <p class="xp-org"><span class='b'>USC Marshall</span> · Team Fluosophy</p>
+            <ul><li>Co-developed Confluo, a social bill-splitting and budgeting tool for students, built on a 51-student survey</li><li>Ran on-campus waitlist outreach that converted 57% to sign-up vs 0.7% online, about 80× higher</li></ul><a class="xp-link" href="#case-confluo">View the case →</a>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Fall 2026</div>
+          <div>
+            <h3>Top 3 of 16 teams, Earthmeal brand pitch</h3>
+            <p class="xp-org"><span class='b'>USC Marshall</span> · Team 4</p>
+            <ul><li>Came up with the core idea: an Earth Day overnight-oats night co-hosted with latenightsc for ~150 students</li><li>Pitch selected by Earthmeal as one of 3 out of 16 teams</li></ul><a class="xp-link" href="#case-earthmeal">View the case →</a>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Mar 2024 – Jun 2024</div>
+          <div>
+            <h3>Project Manager</h3>
+            <p class="xp-org"><span class='b'>Marketing &amp; Management Course Competition</span> · NCCU</p>
+            <ul><li>Developed a video content strategy that drew 1,500 views within a week</li><li>Launched NFC sticker products with an end-to-end marketing and sales plan; they sold out in two weeks</li></ul>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="xp-when">Sep 2022 – Jun 2023</div>
+          <div>
+            <h3>Team Leader, Activities Department</h3>
+            <p class="xp-org"><span class='b'>NCCU Ambassadors</span></p>
+            <ul><li>Led a team of 10 to plan the university graduation ceremony, 6 campus tours and 4 receptions</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head"><h2>Skills &amp; certificates</h2><p>What I bring to a brand team.</p></div>
+      <div class="skills">
+        <div><h4>Content &amp; social</h4><ul><li>Short-form video: idea, script, shoot, edit</li><li>Copywriting and titles that earn the tap</li><li>Content planning and scheduling</li><li>Community engagement</li><li>Brand partnership coordination</li></ul></div>
+        <div><h4>Strategy &amp; research</h4><ul><li>Trend and competitor research</li><li>Student surveys and insights</li><li>Product features and go-to-market</li><li>Events, sponsorships and campus activations</li><li>KPI tracking and SEO</li></ul></div>
+        <div><h4>Tools &amp; platforms</h4><ul><li>RedNote (Xiaohongshu), TikTok, Instagram, Facebook, Pinterest</li><li>CapCut, Canva</li><li>Google Analytics</li><li>Excel, PowerPoint, Word</li></ul></div>
+        <div><h4>Certificates</h4><ul><li>Inside LVMH<small>Sep 2026</small></li><li>L'Oréal Brandstorm 2026, participation<small>Mar 2026</small></li><li>LinkedIn Marketing Strategy<small>Oct 2025</small></li><li>Google Analytics<small>Sep 2025</small></li></ul></div>
+      </div>
+      <div class="lang">
+        <div><h4>Languages</h4><p>Mandarin (native) · English (professional working proficiency)</p></div>
+        <div><h4>Interests</h4><p>Cooking · Muay Thai</p></div>
+      </div>
+      <p class="avail">Available for Summer 2027 internships.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <h2>Let's talk.</h2>
+      <div class="links">
+        <div><span>Email</span><a href="mailto:luhsinyi2003@gmail.com">luhsinyi2003@gmail.com</a></div>
+        <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/hsin-yi-susan-lu-9118b32b8/" target="_blank" rel="noopener">View profile ↗</a></div>
+        <div><span>Résumé (PDF)</span><a href="assets/Hsin-Yi_Susan_Lu_Resume.pdf" target="_blank" rel="noopener">View PDF ↗</a></div>
+        <div><span>RedNote</span><a href="https://www.rednote.com/user/profile/5b053eab11be10085de277ef" target="_blank" rel="noopener">View profile ↗</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Hsin-Yi (Susan) Lu · Los Angeles</span></div></footer>
+
+<div class="case" id="case" role="dialog" aria-modal="true" aria-labelledby="caseTitle">
+  <div class="case-bar"><div class="wrap">
+    <button type="button" id="caseClose">← All work</button>
+    <span class="eyebrow" id="caseCount"></span>
+  </div></div>
+  <div class="case-body" id="caseBody"></div>
+</div>
+<div class="lb" id="lb" role="dialog" aria-label="Enlarged image"><img alt=""></div>
+
+<script>
+const A = "assets/";
+const ph = (label, ratio) => `<div class="ph ${ratio}"><span>${label}</span></div>`;
+const XHS = {
+  rm:["160/52台灣女大生vlog~在信義逛街約會🛍️","05-06","299"],
+  food:["160/52台灣女生一天吃什麼？怎麼吃一斤不掉","05-07","1365"],
+  ka:["台灣女生香香好物分享🌸夏天當個香香女孩✨","07-22","125"],
+  js:["160/53台灣女生vlog~去公園野餐畫畫🧺","06-25","333"],
+  brunch:["160/52台灣女生vlog~三訪台北最愛早午餐🍳","08-01","429"],
+  la:["北美留學vlog🇺🇸跟新朋友吃日料、喝奶茶！","10-05","318"],
+  teddi:["160/51一天吃什麼vlog～把自己養的好好滴💗","01-12","365"]
+};
+const heart = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF2442" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.1 5.3 3 1.7-1.9 3.2-3 5.3-3 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>`;
+const xhs = (k, cap) => { const [t,d,l]=XHS[k]; return `<figure class="xhs-fig"><div class="xhs">
+  <div class="xhs-ph"><img src="${A}c-${k}.jpg" alt="${t}" loading="lazy"></div>
+  <div class="xhs-body"><p class="xhs-t">${t}</p>
+    <div class="xhs-meta"><img class="xhs-av" src="${A}avatar.jpg" alt=""><span class="xhs-u">貝果露的吃飯日記<small>${d}</small></span><span class="xhs-l">${heart}${l}</span></div></div>
+  </div>${cap?`<figcaption>${cap}</figcaption>`:""}</figure>`; };
+const hbars = (title, note, rows, max) => `<div class="chart"><h3>${title}</h3>${note?`<p class="chart-note">${note}</p>`:""}
+  ${rows.map(([k,v,lab])=>`<div class="hb" data-tip="${k}: ${lab||v+'%'}"><span class="hb-k">${k}</span><span class="hb-track"><span class="hb-bar" style="width:${v/max*100}%"></span></span><span class="hb-v">${lab||v+'%'}</span></div>`).join("")}</div>`;
+const vbars = (title, note, rows, max) => `<div class="chart"><h3>${title}</h3>${note?`<p class="chart-note">${note}</p>`:""}
+  <div class="vb-wrap">${rows.map(([k,v])=>`<div class="vb" data-tip="${k}: ≈${v}%"><span class="vb-v">${v}%</span><span class="vb-col"><span class="vb-bar" style="height:${v/max*100}%"></span></span><span class="vb-k">${k}</span></div>`).join("")}</div></div>`;
+const fig = (src, cap, alt, cls) => `<figure${cls?` class="${cls}"`:""}><img src="${A}${src}" alt="${alt||cap||""}" loading="lazy">${cap?`<figcaption>${cap}</figcaption>`:""}</figure>`;
+
+const BB_COVER = `<svg class="bb-art" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Concept illustration: skincare bottles and a yoga mat on a studio floor">
+<defs>
+  <linearGradient id="bw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE3F4"/><stop offset="1" stop-color="#FFC6EA"/></linearGradient>
+  <linearGradient id="bf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B4DF"/><stop offset="1" stop-color="#FFD9F0"/></linearGradient>
+  <radialGradient id="bglow" cx=".72" cy=".25" r=".5"><stop offset="0" stop-color="#FFF6D9" stop-opacity=".95"/><stop offset="1" stop-color="#FFF6D9" stop-opacity="0"/></radialGradient>
+  <linearGradient id="cob" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00105E"/><stop offset=".28" stop-color="#1B3BD6"/><stop offset=".42" stop-color="#5C78FF"/><stop offset=".6" stop-color="#001DA3"/><stop offset="1" stop-color="#000B45"/></linearGradient>
+  <linearGradient id="pk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C0379F"/><stop offset=".3" stop-color="#FF7CE5"/><stop offset=".45" stop-color="#FFC2F2"/><stop offset=".62" stop-color="#FF7CE5"/><stop offset="1" stop-color="#A72C8A"/></linearGradient>
+  <linearGradient id="blk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#050505"/><stop offset=".35" stop-color="#4A4A4A"/><stop offset=".55" stop-color="#1E1E1E"/><stop offset="1" stop-color="#000"/></linearGradient>
+  <linearGradient id="wht" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9D3DA"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".7" stop-color="#F1ECF1"/><stop offset="1" stop-color="#C9C2CA"/></linearGradient>
+  <linearGradient id="lime" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A9CC2E"/><stop offset=".4" stop-color="#EEFFA6"/><stop offset="1" stop-color="#9BBE22"/></linearGradient>
+  <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5A766"/><stop offset=".45" stop-color="#E6883B"/><stop offset="1" stop-color="#A9561C"/></linearGradient>
+  <radialGradient id="matEnd" cx=".45" cy=".45" r=".6"><stop offset="0" stop-color="#C96E28"/><stop offset=".55" stop-color="#E6883B"/><stop offset="1" stop-color="#8E4614"/></radialGradient>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+  <filter id="card" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#7A1F63" flood-opacity=".25"/></filter>
+</defs>
+<rect width="600" height="600" fill="url(#bw)"/>
+<rect width="600" height="600" fill="url(#bglow)"/>
+<path d="M0 392 L600 360 L600 600 L0 600Z" fill="url(#bf)"/>
+<path d="M0 392 L600 360" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2"/>
+<!-- shadows -->
+<ellipse cx="210" cy="520" rx="170" ry="20" fill="#9E2C7E" opacity=".28" filter="url(#soft)"/>
+<ellipse cx="350" cy="508" rx="58" ry="12" fill="#00105E" opacity=".35" filter="url(#soft)"/>
+<ellipse cx="452" cy="512" rx="46" ry="10" fill="#7A1F63" opacity=".35" filter="url(#soft)"/>
+<ellipse cx="262" cy="512" rx="44" ry="9" fill="#7A1F63" opacity=".3" filter="url(#soft)"/>
+<!-- yoga mat -->
+<rect x="70" y="450" width="250" height="68" rx="34" fill="url(#mat)"/>
+<rect x="100" y="456" width="200" height="10" rx="5" fill="#FFFFFF" opacity=".28"/>
+<ellipse cx="88" cy="484" rx="30" ry="34" fill="url(#matEnd)"/>
+<path d="M88 466c10 0 16 8 16 18s-7 17-16 17-14-6-14-14 6-12 12-12 9 4 9 9-3 7-7 7" fill="none" stroke="#7E3C10" stroke-width="3" stroke-linecap="round"/>
+<!-- jar -->
+<rect x="222" y="452" width="82" height="62" rx="12" fill="url(#wht)"/>
+<ellipse cx="263" cy="452" rx="41" ry="9" fill="#FFFFFF"/>
+<rect x="216" y="430" width="94" height="26" rx="9" fill="url(#lime)"/>
+<ellipse cx="263" cy="430" rx="47" ry="8" fill="#F4FFC4"/>
+<!-- cobalt bottle -->
+<rect x="306" y="250" width="90" height="262" rx="22" fill="url(#cob)"/>
+<rect x="322" y="268" width="10" height="226" rx="5" fill="#FFFFFF" opacity=".35"/>
+<rect x="326" y="210" width="50" height="48" rx="8" fill="url(#blk)"/>
+<ellipse cx="351" cy="210" rx="25" ry="6" fill="#5A5A5A"/>
+<rect x="318" y="342" width="66" height="88" rx="6" fill="#FFCEEF"/>
+<text x="351" y="374" text-anchor="middle" font-family="Source Code Pro,ui-monospace,monospace" font-size="12" font-weight="600" fill="#001DA3">BARRIER</text>
+<text x="351" y="392" text-anchor="middle" font-family="Source Code Pro,ui-monospace,monospace" font-size="12" font-weight="600" fill="#001DA3">REPAIR</text>
+<rect x="333" y="404" width="36" height="3" rx="1.5" fill="#001DA3" opacity=".5"/>
+<!-- pink dropper -->
+<rect x="418" y="356" width="72" height="156" rx="18" fill="url(#pk)"/>
+<rect x="430" y="372" width="8" height="124" rx="4" fill="#FFFFFF" opacity=".4"/>
+<rect x="436" y="314" width="36" height="48" rx="6" fill="url(#wht)"/>
+<ellipse cx="454" cy="304" rx="22" ry="16" fill="url(#blk)"/>
+<ellipse cx="448" cy="298" rx="7" ry="4" fill="#FFFFFF" opacity=".35"/>
+<!-- floating card -->
+<g transform="translate(64 96) rotate(-6)" filter="url(#card)">
+  <rect width="210" height="104" rx="14" fill="#FFFFFF"/>
+  <text x="22" y="44" font-family="Source Code Pro,ui-monospace,monospace" font-size="17" font-weight="600" letter-spacing="1.6" fill="#001DA3">SKIN CHECK</text>
+  <text x="22" y="74" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="17" fill="#212121">after class →</text>
+  <circle cx="182" cy="34" r="8" fill="#DEFF73" stroke="#001DA3" stroke-width="2"/>
+</g>
+<!-- sparkles -->
+<g fill="#FFFFFF"><path d="M470 150l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/><path d="M520 222l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" opacity=".8"/></g>
+<text x="40" y="572" font-family="Source Code Pro,ui-monospace,monospace" font-size="14" font-weight="600" letter-spacing="1.2" fill="#001DA3">BIOTECH BEAUTY × COREPOWER YOGA</text>
+</svg>`;
+const BB_KEY = `<svg class="bb-tab" viewBox="0 0 660 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Concept: in-studio skin analysis tablet">
+<defs>
+ <linearGradient id="tframe" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A3D45"/><stop offset=".5" stop-color="#15171C"/><stop offset="1" stop-color="#2B2E35"/></linearGradient>
+ <linearGradient id="tglass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <radialGradient id="zOil" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F2B946" stop-opacity=".85"/><stop offset="1" stop-color="#F2B946" stop-opacity="0"/></radialGradient>
+ <radialGradient id="zRed" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FF7CE5" stop-opacity=".8"/><stop offset="1" stop-color="#FF7CE5" stop-opacity="0"/></radialGradient>
+ <radialGradient id="zDry" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#5C78FF" stop-opacity=".7"/><stop offset="1" stop-color="#5C78FF" stop-opacity="0"/></radialGradient>
+ <pattern id="mesh" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="1" fill="#9FB0E8"/></pattern>
+ <clipPath id="faceclip"><ellipse cx="190" cy="214" rx="96" ry="126"/></clipPath>
+ <filter id="tsh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="18" flood-color="#000B45" flood-opacity=".35"/></filter>
+</defs>
+<path d="M300 446 L360 446 L392 512 L268 512Z" fill="#C9CFDA"/><rect x="250" y="506" width="160" height="10" rx="5" fill="#AEB6C4"/>
+<g filter="url(#tsh)"><rect x="10" y="10" width="640" height="440" rx="30" fill="url(#tframe)"/></g>
+<rect x="26" y="26" width="608" height="408" rx="16" fill="#F7F9FA"/>
+<circle cx="330" cy="18" r="3" fill="#0B0C0F"/>
+<!-- header -->
+<text x="50" y="60" font-family="Source Code Pro,ui-monospace,monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#001DA3">SKIN LAB · POST-CLASS</text>
+<text x="610" y="60" text-anchor="end" font-family="Source Code Pro,ui-monospace,monospace" font-size="11" fill="#6D7588">SCAN 03/12 · 7:42 PM</text>
+<rect x="50" y="72" width="560" height="1" fill="#E3E7EE"/>
+<!-- face scan -->
+<rect x="70" y="86" width="240" height="330" rx="14" fill="#EEF1F8"/>
+<g clip-path="url(#faceclip)"><rect x="90" y="84" width="200" height="260" fill="url(#mesh)"/>
+ <ellipse cx="190" cy="150" rx="40" ry="34" fill="url(#zOil)"/><ellipse cx="190" cy="232" rx="18" ry="42" fill="url(#zOil)"/>
+ <ellipse cx="140" cy="250" rx="36" ry="30" fill="url(#zRed)"/><ellipse cx="240" cy="250" rx="36" ry="30" fill="url(#zRed)"/>
+ <ellipse cx="190" cy="318" rx="40" ry="22" fill="url(#zDry)"/></g>
+<ellipse cx="190" cy="214" rx="96" ry="126" fill="none" stroke="#001DA3" stroke-width="2"/>
+<path d="M158 206q12-8 22 0M202 206q10-8 22 0M178 270q12 8 24 0" fill="none" stroke="#001DA3" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+<rect class="bb-scanline" x="94" y="96" width="192" height="3" rx="1.5" fill="#2FBF84"/>
+<g fill="none" stroke="#001DA3" stroke-width="3" stroke-linecap="round"><path d="M84 112v-16h16"/><path d="M296 112v-16h-16"/><path d="M84 396v16h16"/><path d="M296 396v16h-16"/></g>
+<g font-family="Source Code Pro,ui-monospace,monospace" font-size="9" font-weight="600"><rect x="88" y="98" width="62" height="16" rx="8" fill="#F2B946"/><text x="119" y="109" text-anchor="middle" fill="#212121">T-ZONE OIL</text>
+<rect x="232" y="292" width="58" height="16" rx="8" fill="#FF7CE5"/><text x="261" y="303" text-anchor="middle" fill="#212121">REDNESS</text></g>
+<!-- readings -->
+<text x="392" y="104" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="20" font-weight="700" fill="#001DA3">Your skin today</text>
+<text x="392" y="124" font-family="Source Code Pro,ui-monospace,monospace" font-size="10" letter-spacing="1" fill="#6D7588">SEBUMETER</text>
+<text x="392" y="144" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#212121">Oil</text>
+<text x="588" y="144" text-anchor="end" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#E6883B">High</text>
+<rect x="392" y="154" width="196" height="7" rx="3.5" fill="#E8ECF4"/><rect x="392" y="154" width="141" height="7" rx="3.5" fill="#E6883B"/>
+<text x="392" y="184" font-family="Source Code Pro,ui-monospace,monospace" font-size="10" letter-spacing="1" fill="#6D7588">CORNEOMETER</text>
+<text x="392" y="204" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#212121">Hydration</text>
+<text x="588" y="204" text-anchor="end" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#5C78FF">Low</text>
+<rect x="392" y="214" width="196" height="7" rx="3.5" fill="#E8ECF4"/><rect x="392" y="214" width="67" height="7" rx="3.5" fill="#5C78FF"/>
+<text x="392" y="244" font-family="Source Code Pro,ui-monospace,monospace" font-size="10" letter-spacing="1" fill="#6D7588">DIGITAL IMAGING</text>
+<text x="392" y="264" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#212121">Redness</text>
+<text x="588" y="264" text-anchor="end" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#FF4FD8">Moderate</text>
+<rect x="392" y="274" width="196" height="7" rx="3.5" fill="#E8ECF4"/><rect x="392" y="274" width="114" height="7" rx="3.5" fill="#FF4FD8"/>
+<rect x="392" y="318" width="196" height="78" rx="12" fill="#001DA3"/>
+<text x="408" y="342" font-family="Source Code Pro,ui-monospace,monospace" font-size="10" letter-spacing="1" fill="#FFCEEF">MATCHED FOR YOU</text>
+<text x="408" y="364" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="15" font-weight="700" fill="#fff">Barrier-repair kit</text>
+<text x="408" y="384" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="12" fill="#C9D3FF">Pick up at the pop-up →</text>
+<rect x="26" y="26" width="608" height="408" rx="16" fill="url(#tglass)"/>
+</svg>`;
+const BB_PHONE = `<svg class="bb-phone" viewBox="0 0 320 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Concept: take-home skin results on a phone">
+<defs>
+ <linearGradient id="pframe" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E939C"/><stop offset=".08" stop-color="#E4E6EA"/><stop offset=".5" stop-color="#B9BDC4"/><stop offset=".92" stop-color="#E4E6EA"/><stop offset="1" stop-color="#8E939C"/></linearGradient>
+ <linearGradient id="pglass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".3" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <clipPath id="pscr"><rect x="14" y="14" width="292" height="632" rx="40"/></clipPath>
+ <clipPath id="thumb"><rect x="34" y="404" width="64" height="64" rx="10"/></clipPath>
+ <filter id="psh" x="-30%" y="-10%" width="160%" height="130%"><feDropShadow dx="0" dy="14" stdDeviation="9" flood-color="#000B45" flood-opacity=".22"/></filter>
+</defs>
+<g filter="url(#psh)"><rect x="4" y="4" width="312" height="652" rx="50" fill="url(#pframe)"/></g>
+<rect x="10" y="10" width="300" height="640" rx="44" fill="#0B0C0F"/>
+<g clip-path="url(#pscr)">
+ <rect x="14" y="14" width="292" height="632" fill="#F7F9FA"/>
+ <rect x="14" y="14" width="292" height="150" fill="#FFCEEF"/>
+ <text x="40" y="44" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="13" font-weight="700" fill="#212121">7:48</text>
+ <g fill="#212121"><rect x="236" y="34" width="3" height="8" rx="1"/><rect x="241" y="31" width="3" height="11" rx="1"/><rect x="246" y="28" width="3" height="14" rx="1"/><rect x="258" y="31" width="22" height="11" rx="3" fill="none" stroke="#212121" stroke-width="1.5"/><rect x="260" y="33" width="15" height="7" rx="1.5"/></g>
+ <rect x="118" y="24" width="84" height="24" rx="12" fill="#0B0C0F"/>
+ <text x="34" y="88" font-family="Source Code Pro,ui-monospace,monospace" font-size="11" font-weight="600" letter-spacing="1.4" fill="#001DA3">YOUR SKIN PROFILE</text>
+ <text x="34" y="116" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="22" font-weight="700" fill="#212121">Oily T-zone,</text>
+ <text x="34" y="142" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="22" font-weight="700" fill="#212121">calm the redness</text>
+ <g transform="translate(70 200)"><circle r="26" fill="none" stroke="#E8ECF4" stroke-width="7"/>
+<circle r="26" fill="none" stroke="#E6883B" stroke-width="7" stroke-linecap="round" stroke-dasharray="117.6 163.4" transform="rotate(-90)"/>
+<text y="5" text-anchor="middle" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#212121">72</text>
+<text y="48" text-anchor="middle" font-family="Source Code Pro,ui-monospace,monospace" font-size="9" letter-spacing=".8" fill="#6D7588">OIL</text>
+<text y="62" text-anchor="middle" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="11" font-weight="700" fill="#E6883B">High</text></g>
+ <g transform="translate(160 200)"><circle r="26" fill="none" stroke="#E8ECF4" stroke-width="7"/>
+<circle r="26" fill="none" stroke="#5C78FF" stroke-width="7" stroke-linecap="round" stroke-dasharray="55.5 163.4" transform="rotate(-90)"/>
+<text y="5" text-anchor="middle" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#212121">34</text>
+<text y="48" text-anchor="middle" font-family="Source Code Pro,ui-monospace,monospace" font-size="9" letter-spacing=".8" fill="#6D7588">HYDRATION</text>
+<text y="62" text-anchor="middle" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="11" font-weight="700" fill="#5C78FF">Low</text></g>
+ <g transform="translate(250 200)"><circle r="26" fill="none" stroke="#E8ECF4" stroke-width="7"/>
+<circle r="26" fill="none" stroke="#FF4FD8" stroke-width="7" stroke-linecap="round" stroke-dasharray="94.8 163.4" transform="rotate(-90)"/>
+<text y="5" text-anchor="middle" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#212121">58</text>
+<text y="48" text-anchor="middle" font-family="Source Code Pro,ui-monospace,monospace" font-size="9" letter-spacing=".8" fill="#6D7588">REDNESS</text>
+<text y="62" text-anchor="middle" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="11" font-weight="700" fill="#FF4FD8">Mod.</text></g>
+ <text x="34" y="318" font-family="Source Code Pro,ui-monospace,monospace" font-size="11" font-weight="600" letter-spacing="1.4" fill="#6D7588">TODAY'S ROUTINE</text>
+ <g font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="13" fill="#212121"><circle cx="40" cy="340" r="4" fill="#001DA3"/><text x="52" y="345">Cleanse, then barrier serum</text>
+ <circle cx="40" cy="364" r="4" fill="#001DA3"/><text x="52" y="369">Light tint, no heavy foundation</text></g>
+ <rect x="24" y="394" width="272" height="84" rx="16" fill="#fff" stroke="#E3E7EE"/>
+ <image href="assets/bb-product.jpg" x="34" y="404" width="64" height="64" clip-path="url(#thumb)" preserveAspectRatio="xMidYMid slice"/>
+ <text x="110" y="424" font-family="Source Code Pro,ui-monospace,monospace" font-size="10" letter-spacing="1" fill="#6D7588">MATCHED</text>
+ <text x="110" y="444" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#212121">Barrier-repair tint</text>
+ <text x="110" y="463" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="12" fill="#6D7588">Sample in your kit</text>
+ <rect x="24" y="492" width="272" height="96" rx="16" fill="#001DA3"/>
+ <text x="44" y="524" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff">Free class pass</text>
+ <text x="44" y="546" font-family="Instrument Sans,Manrope,system-ui,sans-serif" font-size="12" fill="#C9D3FF">with any full-size purchase</text>
+ <text x="44" y="570" font-family="Source Code Pro,ui-monospace,monospace" font-size="10" letter-spacing="1" fill="#FFCEEF">SHOW AT THE POP-UP</text>
+ <rect x="222" y="506" width="62" height="62" rx="8" fill="#fff"/>
+ <g fill="#001DA3"><rect x="229" y="513" width="16" height="16"/><rect x="261" y="513" width="16" height="16"/><rect x="229" y="545" width="16" height="16"/><rect x="250" y="534" width="6" height="6"/><rect x="262" y="546" width="6" height="6"/><rect x="271" y="555" width="6" height="6"/><rect x="250" y="552" width="6" height="6"/></g>
+ <rect x="110" y="628" width="100" height="5" rx="2.5" fill="#212121"/>
+ <rect x="14" y="14" width="292" height="632" fill="url(#pglass)"/>
+</g>
+</svg>`;
+const BB_JOURNEY = `<ol class="bbj"><li><span class="bbj-ic"><svg viewBox="-32 -32 64 64"><rect x="-18" y="-22" width="36" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M-10 12v12M10 12v12M-16 24h32M-9 -12h18M-9 -4h12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span><span class="bbj-t"><b>Pre-class</b>Front-desk signs invite members to a skin check after class.</span></li><li><span class="bbj-ic"><svg viewBox="-32 -32 64 64"><circle cx="-4" cy="-4" r="15" fill="none" stroke="currentColor" stroke-width="3"/><path d="M7 7l13 13" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="-9" cy="-7" r="2.5" fill="currentColor"/><circle cx="1" cy="-1" r="2.5" fill="currentColor"/></svg></span><span class="bbj-t"><b>Skin check</b>Quick non-invasive tests for oil, hydration and redness.<em class="kpi">KPI: Skin-check participation</em></span></li><li><span class="bbj-ic"><svg viewBox="-32 -32 64 64"><rect x="-22" y="-10" width="44" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M-22 0h44M-8 -10v-8h16v8" stroke="currentColor" stroke-width="3" fill="none"/></svg></span><span class="bbj-t"><b>Matched kit</b>Staff match a sample kit and give a profile-specific QR code.<em class="kpi">KPI: QR sign-ups</em></span></li><li><span class="bbj-ic"><svg viewBox="-32 -32 64 64"><path d="M-24 -6l6-16h36l6 16z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M-18 -2v24M18 -2v24M-22 22h44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span><span class="bbj-t"><b>Pop-up</b>Outside the studio: full sizes, 15% off, and a free class pass with purchase.<em class="kpi">KPI: On-site purchases</em></span></li><li><span class="bbj-ic"><svg viewBox="-32 -32 64 64"><rect x="-14" y="-24" width="28" height="48" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M-6 14h12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="-7" y="-13" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></span><span class="bbj-t"><b>Follow-up</b>Day 1 routine email, then a review ask and repurchase code by day 14.<em class="kpi">KPI: Reviews in 7 days · repurchase in 30</em></span></li></ol>`;
+
+const LO_CARD = `<svg class="lo-art" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prosperity Sprawl circular business model: source, scan, engage, return">
+  <defs><linearGradient id="lobg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8ECEC"/><stop offset="1" stop-color="#EFD7DA"/></linearGradient>
+  <clipPath id="locl"><circle cx="300" cy="300" r="112"/></clipPath>
+  <marker id="loar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#B0647A"/></marker></defs>
+  <rect width="600" height="600" fill="url(#lobg)"/>
+  <circle cx="300" cy="300" r="200" fill="none" stroke="#D9AEB8" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+  <path d="M398 126 A200 200 0 0 1 474 202" fill="none" stroke="#B0647A" stroke-width="2.5" marker-end="url(#loar)"/>
+  <path d="M474 398 A200 200 0 0 1 398 474" fill="none" stroke="#B0647A" stroke-width="2.5" marker-end="url(#loar)"/>
+  <path d="M202 474 A200 200 0 0 1 126 398" fill="none" stroke="#B0647A" stroke-width="2.5" marker-end="url(#loar)"/>
+  <path d="M126 202 A200 200 0 0 1 202 126" fill="none" stroke="#B0647A" stroke-width="2.5" marker-end="url(#loar)"/>
+  <circle cx="300" cy="300" r="120" fill="#FFFFFF"/>
+  <image href="assets/lo-bottle.jpg" x="188" y="188" width="224" height="224" clip-path="url(#locl)" preserveAspectRatio="xMidYMid slice"/>
+  <g transform="translate(300 100)"><rect x="-82" y="-30" width="164" height="60" rx="30" fill="#FFFFFF" stroke="#E2C2C8" stroke-width="1.5"/>
+<text x="0" y="-4" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4" fill="#B0647A">01 SOURCE</text>
+<text x="0" y="15" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#4E2F3C">3 scent stories</text></g>
+  <g transform="translate(500 300)"><rect x="-82" y="-30" width="164" height="60" rx="30" fill="#FFFFFF" stroke="#E2C2C8" stroke-width="1.5"/>
+<text x="0" y="-4" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4" fill="#B0647A">02 SCAN</text>
+<text x="0" y="15" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#4E2F3C">NFC scent profile</text></g>
+  <g transform="translate(300 500)"><rect x="-82" y="-30" width="164" height="60" rx="30" fill="#FFFFFF" stroke="#E2C2C8" stroke-width="1.5"/>
+<text x="0" y="-4" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4" fill="#B0647A">03 ENGAGE</text>
+<text x="0" y="15" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#4E2F3C">AI match + community</text></g>
+  <g transform="translate(100 300)"><rect x="-82" y="-30" width="164" height="60" rx="30" fill="#FFFFFF" stroke="#E2C2C8" stroke-width="1.5"/>
+<text x="0" y="-4" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4" fill="#B0647A">04 RETURN</text>
+<text x="0" y="15" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#4E2F3C">Bottle back, rewards</text></g>
+  <text x="32" y="574" font-family="Manrope,system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="1.6" fill="#8A5A6A">PROSPERITY SPRAWL · CIRCULAR MODEL</text>
+</svg>`;
+
+const LO_LUX = LO_CARD.replace('id="lobg"','id="lobg2"').replace('url(#lobg)','url(#lobg2)').replace('stop-color="#F8ECEC"','stop-color="#1E1816"').replace('stop-color="#EFD7DA"','stop-color="#2A211E"').replace(/#D9AEB8/g,'#6E5A3C').replace(/#B0647A/g,'#B8975A').replace(/fill="#FFFFFF" stroke="#E2C2C8"/g,'fill="#15110F" stroke="#B8975A"').replace(/fill="#4E2F3C"/g,'fill="#F3EBDD"').replace(/#8A5A6A/g,'#B8975A').replace('id="locl"','id="locl2"').replace('url(#locl)','url(#locl2)').replace('id="loar"','id="loar2"').replace(/url\(#loar\)/g,'url(#loar2)');
+
+const CASES = [
+{
+  id:"rednote", theme:"#F7D7DD", light:true, big:["90%","of my followers are women, ~80% aged 18–34"], chip:"", lens:"social beauty", num:"01",
+  title:"Creator on RedNote",
+  tags:"Social · Short-form video · Brand partnerships",
+  hook:"<b>90% women</b> audience · paid partnerships with <span class='b'>ROBINMAY</span> and <span class='b'>Teddi Lab by Unichi</span>",
+  cardMedia:`<div class="media rn-media">${xhs("teddi")}${xhs("rm")}${xhs("food")}</div>`,
+  summary:"Since March 2024 I've run my own RedNote (Xiaohongshu) channel. I come up with every video, write the script, film and edit it, and work directly with brand teams on partnerships. I create in Mandarin for a Chinese-speaking audience.",
+  meta:[["Role","Content creator (own channel)"],["Timeline","Mar 2024 – present"],["Paid partners","ROBINMAY · Teddi Lab by Unichi · KaPod · JisuLife"]],
+  blocks:[
+    ["Featured partnerships",`
+      <p><strong>Shopping vlog at a <span class='b'>ROBINMAY</span> store</strong><span class="badge">Paid brand partnership</span></p>
+      <p>I kept my usual day-in-the-life vlog style. The bags, charms and how I styled them come through as part of the day, not as a hard sell.</p>
+      <div class="gallery g4 tall">
+        ${xhs("rm","<em>Vlog: a shopping date in Taipei’s Xinyi district</em>")}${fig("rm-detail.jpg","Bag details up close")}${fig("rm-charm.jpg","Charms and accessories")}${fig("rm-mirror.jpg","Styling in the store")}
+      </div>
+      <p class="statline">≈6.4K views <i>·</i> 299 likes <i>·</i> 21 comments <i>·</i> 10 saves</p>
+      <p style="margin-top:40px"><strong><span class='b'>Teddi Lab by Unichi</span> Hair Boost Gummy</strong><span class="badge">Paid brand partnership</span></p>
+      <p>An Australian beauty-supplement brand. I filmed it while getting ready to go out, chatting about how much hair I’d been losing lately. Naming the problem first let the hair gummies come in as the answer, not as an ad.</p>
+      <div class="gallery g4 tall">${xhs("teddi","<em>What I eat in a day: taking good care of myself</em>")}${fig("td-0.jpg","The problem: hair loss")}${fig("td-2.jpg","The product")}${fig("td-1.jpg","Taste test")}</div>
+      <p class="statline">7,671 views <i>·</i> 365 likes</p>`],
+    ["Also paid by",`<div class="also">
+      <div>${xhs("ka")}<p><span class='b'>KaPod</span> 4-in-1 laundry capsules, shown in my real laundry routine. <em class="tr">“My favorite fresh-scent finds for summer”</em> <span class="cap">2,910 views · 125 likes</span></p></div>
+      <div>${xhs("js")}<p><span class='b'>JisuLife</span> handheld fan, woven into a picnic vlog. <em class="tr">“Vlog: a picnic and painting day in the park”</em> <span class="cap">4,997 views · 333 likes</span></p></div>
+    </div>`],
+    ["Who watches",`
+      <div class="stats" style="max-width:none">
+        <div><strong>90%</strong><small>of followers are women</small></div>
+        <div><strong>~80%</strong><small>aged 18–34</small></div>
+        <div><strong>11.9%</strong><small>cover click-through rate</small></div>
+        <div><strong>Top 5</strong><small>follower interests include fashion and beauty</small></div>
+      </div>
+      <p class="cap">From RedNote creator analytics, Oct 30 – Nov 7, 2026.</p>`],
+    ["Own content",`
+      <p>Most of what I post is my own: daily vlogs about food, routine, and now student life in Los Angeles.</p>
+      <div class="gallery g3">
+        ${xhs("food","<em>What I eat in a day</em> · 24K views")}
+        ${xhs("brunch","<em>Vlog: my favorite Taipei brunch, third visit</em> · 7.8K views")}
+        ${xhs("la","<em>Study-abroad vlog: Japanese food and milk tea with new friends</em> · 5.4K views")}
+      </div>`],
+    ["How I write titles",`
+      <p>The title decides whether someone taps, so I build mine on two things.</p>
+      <ul>
+        <li><strong>Say who I am, right away.</strong> In Taiwan I opened with “Taiwanese girl,” since many RedNote viewers are curious about life in Taiwan. Now that I study in the US, I lead with “study-abroad vlog,” a topic a lot of viewers want to see.</li>
+        <li><strong>Give a reason to tap.</strong> Curiosity, something to learn (like how to make overnight oats), or a “that's me too” moment. A title that names a common struggle makes people stop and watch.</li>
+      </ul>`],
+    ["Takeaways",`<div class="tk"><p>Treat creators like customers, and it shows on camera.</p><p>Brands that sent products for me to actually use got videos that felt like my own. Brands that sent me to a store with nothing to try got an outsider’s tour.</p><p>So I pick partners by how they work with me, and I turn down briefs that script every line.</p></div>`]
+  ]
+},
+{
+  id:"confluo", theme:"#1C2B4F", big:["3rd","place at the USC Marshall Fall Case Competition"], chip:"3rd place", lens:"strategy", num:"02",
+  title:"<span class='b'>Confluo</span> — snap, split, earn, save",
+  tags:"Product features · Go-to-market · Case competition",
+  hook:"<b>3rd place</b>, USC Marshall Fall Case Competition",
+  cardMedia:`<div class="media"><img src="${A}card-confluo.jpg" alt="Team Fluosophy with 3rd-place medals" loading="lazy"></div>`,
+  summary:"For the Fluo case at the USC Marshall Fall Case Competition, our five-person team pitched Confluo: one receipt snap that lets USC students split the bill, earn rewards, track spending and save. We advanced through two rounds in one day and placed 3rd.",
+  meta:[["Role","Feature development · campus outreach"],["Timeline","Oct 2026"],["Team","T5 “Fluosophy” · 5 people"],["Result","3rd place · finalist"]],
+  lead:fig("confluo-award.jpg","Team Fluosophy after placing 3rd, Oct 23, 2026","Team Fluosophy with medals at USC Marshall"),
+  blocks:[
+    ["Goal &amp; audience",`<dl class="ga"><div><dt>Goal</dt><dd>Fluo's brief was growth. Our answer: make bill-splitting the hook, so every group dinner brings new users into Fluo.</dd></div><div><dt>Audience</dt><dd>USC students who eat out in groups, overspend, and rarely track where their money goes.</dd></div></dl>`],
+        ["My part",`<p>I developed how one receipt photo powers four features: two new ones our team designed, plus Fluo's existing AI Money Buddy and Stash, built into the same flow. I also ran our on-campus waitlist outreach.</p>
+      <div class="cf2">
+        <div class="cf2-phone"><svg class="cf-phone" viewBox="0 0 240 440" role="img" aria-label="Phone scanning a receipt">
+  <rect x="4" y="4" width="232" height="432" rx="34" fill="#1C2B4F"/>
+  <rect x="14" y="14" width="212" height="412" rx="26" fill="#EAF0F7"/>
+  <rect x="92" y="22" width="56" height="8" rx="4" fill="#1C2B4F"/>
+  <g transform="rotate(-3 120 220)">
+    <path d="M58 92h124v214l-10 8-10-8-11 8-10-8-11 8-10-8-11 8-10-8-11 8-10-8-11 8-9-8z" fill="#fff" stroke="#D3DCE8" stroke-width="2"/>
+    <rect x="86" y="108" width="68" height="9" rx="4.5" fill="#1C2B4F"/>
+    <g fill="#B9C4D4"><rect x="74" y="136" width="56" height="6" rx="3"/><rect x="146" y="136" width="22" height="6" rx="3"/>
+    <rect x="74" y="154" width="44" height="6" rx="3"/><rect x="146" y="154" width="22" height="6" rx="3"/>
+    <rect x="74" y="172" width="62" height="6" rx="3"/><rect x="146" y="172" width="22" height="6" rx="3"/>
+    <rect x="74" y="190" width="38" height="6" rx="3"/><rect x="146" y="190" width="22" height="6" rx="3"/></g>
+    <rect x="74" y="214" width="94" height="2" fill="#D3DCE8"/>
+    <rect x="74" y="228" width="40" height="8" rx="4" fill="#1C2B4F"/><rect x="132" y="228" width="36" height="8" rx="4" fill="#1C2B4F"/>
+    <rect x="74" y="252" width="94" height="22" rx="4" fill="#F2F5F9"/>
+  </g>
+  <g stroke="#2FBF84" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M44 78v-18h22"/><path d="M196 78v-18h-22"/><path d="M44 324v18h22"/><path d="M196 324v18h-22"/>
+  </g>
+  <rect class="cf-scan" x="44" y="80" width="152" height="4" rx="2" fill="#2FBF84"/>
+  <rect x="70" y="370" width="100" height="36" rx="18" fill="#1C2B4F"/>
+  <text x="120" y="393" text-anchor="middle" font-family="Manrope,system-ui,sans-serif" font-size="14" font-weight="700" fill="#fff">Snap</text>
+</svg><p><b>Snap once</b><br>One photo of the receipt does the rest</p></div>
+        <div class="cf2-feats">
+          <div class="cf2-f"><span class="tag new">New</span><b>Split &amp; Pay</b>
+            <div class="mini split"><span><i>C</i>$18.40</span><span><i>R</i>$22.10</span><span><i>S</i>$15.75</span><em>Pay</em></div>
+            <small>Tap what you ordered. Tax and tip are added, and friends pay in one tap.</small></div>
+          <div class="cf2-f"><span class="tag new">New</span><b>Earn</b>
+            <div class="mini earn"><strong>+120</strong><span>points · redeem at USC Village</span></div>
+            <small>Every receipt earns points to spend at USC-area spots.</small></div>
+          <div class="cf2-f"><span class="tag">Fluo AI Money Buddy</span><b>Track</b>
+            <div class="mini track"><span class="bars"><i style="height:40%"></i><i style="height:65%"></i><i style="height:90%"></i></span><span class="bubble">80% of your dining budget is gone</span></div>
+            <small>Spending is sorted item by item, with a nudge before you go over.</small></div>
+          <div class="cf2-f"><span class="tag">Fluo Stash</span><b>Save</b>
+            <div class="mini save"><span class="lbl">Spring break<em>62%</em></span><span class="bar"><i style="width:62%"></i></span><span class="lbl sm">Night-out cap · $40</span></div>
+            <small>Savings goals and a spending cap for nights out.</small></div>
+        </div>
+      </div>
+      <p class="cap">Screens are illustrative, redrawn from our pitch.</p>
+      <p class="sub">The original slides</p>
+      <div class="gallery g5">${fig("fl5.jpg","Snap once")}${fig("fl6.jpg","Split &amp; Pay")}${fig("fl7.jpg","Earn")}${fig("fl8.jpg","Track")}${fig("fl9.jpg","Save")}</div>`],
+    ["What students told us",`<div class="stats" style="max-width:none">
+        <div><strong>80%</strong><small>overspend their monthly plan</small></div>
+        <div><strong>67%</strong><small>rarely track their spending</small></div>
+        <div><strong>86%</strong><small>want rewards or discounts</small></div>
+      </div>
+      <p class="cap">Team survey of 51 USC students. It's why the pitch leads with rewards and makes tracking automatic.</p>`],
+    ["Results",`<div class="vs">
+        <div class="vs-row"><span class="vs-k">In person<small>my campus outreach</small></span><span class="vs-track"><span class="vs-bar" style="width:57%"></span></span><span class="vs-v">57%</span></div>
+        <div class="vs-row"><span class="vs-k">Online<small>online outreach</small></span><span class="vs-track"><span class="vs-bar off" style="width:0.7%"></span></span><span class="vs-v">0.7%</span></div>
+        <p class="vs-note">Waitlist sign-up rate · <b>about 80× higher in person</b></p>
+      </div>
+      <ul><li>Built in one week: product concept, student research and a live waitlist test</li><li>Advanced to the finals after two rounds on the same day and placed 3rd</li></ul>`],
+
+    ["Takeaways",`<div class="tk"><p>Nobody stops scrolling for a feature. They stop for what’s in it for them.</p><p>Online, I explained what Confluo does, and 0.7% signed up. Face to face, I showed students what they’d get, and 57% did.</p><p>Next time, with a budget, I’d lead with the payoff, like a small reward for joining, before I ever mention a feature.</p></div>`]
+  ]
+},
+{
+  id:"loreal", theme:"#15110F", big:["3","notes, each sourced without harming nature"], heroImg:"lo-bottle.jpg", chip:"L'Oréal Brandstorm", lens:"beauty strategy", num:"03",
+  title:"Prosperity Sprawl — a fragrance concept",
+  tags:"Beauty · Fragrance concept · Sustainability",
+  hook:"<span class='b'>L'Oréal Brandstorm 2026</span> · team entry",
+  cardMedia:`<div class="media lo-media">${LO_CARD}</div>`,
+  summary:"Our team's entry to L'Oréal Brandstorm 2026, L'Oréal's student innovation competition. A fragrance built from flowers that are never picked, invasive plants and reclaimed sandalwood, with an app and in-store experience around it.",
+  meta:[["Role","Participant · fragrance concept"],["Timeline","2026"],["Type","Competition entry (team)"],["Organizer","<span class='b'>L'Oréal Brandstorm</span>"]],
+  blocks:[
+    ["Goal &amp; audience",`<dl class="ga"><div><dt>Goal</dt><dd>Rethink “sustainable luxury” for L'Oréal Luxe: a fine fragrance that doesn't trade beauty for harm to nature, and keeps buyers engaged after the sale.</dd></div><div><dt>Audience &amp; insight</dt><dd>Luxury fragrance buyers tired of smelling like everyone else. Today’s best-sellers all drift toward the same few scents, and wearing one feels like showing up in the same outfit. They want something rare, and kind to nature.</dd></div><div><dt>Positioning</dt><dd>Top tier of L’Oréal Luxe fragrance, next to Armani Privé, Maison Margiela and Aesop. NT$5,000 (about US$155) per 50ml.</dd></div></dl>`],
+        ["The scent",`<p>I designed the scent concept: three notes, each sourced without harming nature. The top and heart note ideas were mine; the base note and the experience around the bottle came from the team.</p>
+      <div class="lx-notes"><div class="lx-n"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="#B8975A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M40 44C34 30 30 18 40 6c10 12 6 24 0 38z"/><path d="M40 44C28 38 16 34 8 20c16-2 26 8 32 24z"/><path d="M40 44c12-6 24-10 32-24-16-2-26 8-32 24z"/><path d="M40 44C30 48 20 56 16 70c14-2 22-12 24-26z"/><path d="M40 44c10 4 20 12 24 26-14-2-22-12-24-26z"/><path d="M40 44v34"/><circle cx="40" cy="40" r="2" fill="#B8975A"/></g></svg><span class="lx-k">Top note</span><b>Lilium speciosum</b><small>A rare lily, never picked. Its scent is captured from the air around the living flower.</small></div><div class="lx-n"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="#B8975A" stroke-width="1.6" stroke-linecap="round"><path d="M14 74C30 54 48 34 68 8"/><path d="M20.6 65.8l-8.5 -3"/><path d="M20.6 65.8l3 -8.5"/><path d="M27.2 57.6l-8.0 -3"/><path d="M27.2 57.6l3 -8.0"/><path d="M33.8 49.4l-7.5 -3"/><path d="M33.8 49.4l3 -7.5"/><path d="M40.4 41.2l-7.0 -3"/><path d="M40.4 41.2l3 -7.0"/><path d="M47.0 33.0l-6.5 -3"/><path d="M47.0 33.0l3 -6.5"/><path d="M53.6 24.8l-6.0 -3"/><path d="M53.6 24.8l3 -6.0"/><path d="M60.2 16.6l-5.5 -3"/><path d="M60.2 16.6l3 -5.5"/></g></svg><span class="lx-k">Heart note</span><b>Leucaena</b><small>An invasive tree already being cleared in Taiwan. Its flowers become an ingredient instead of waste.</small></div><div class="lx-n"><svg viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="#B8975A" stroke-width="1.6"><ellipse cx="40" cy="40" rx="32" ry="30"/><ellipse cx="41" cy="41" rx="23" ry="21"/><ellipse cx="42" cy="41" rx="14" ry="13"/><ellipse cx="42" cy="42" rx="6" ry="5.5"/><path d="M40 10l2 8M70 36l-7 2" stroke-linecap="round"/></g></svg><span class="lx-k">Base note</span><b>Antique sandalwood</b><small>Reclaimed from old furniture and beams, so no new trees are cut.</small></div></div>
+      <p class="lx-foot">A concept pitch: nothing was formulated or lab-tested, and the deck's projections are not results.</p>`],
+    ["Team concept",`<div class="lo-team"><div class="lo-loop">${LO_LUX}</div><div><p>Around the scent, our team built a circular model that keeps buyers engaged after the sale:</p><ul>
+      <li class="team"><strong>Scan:</strong> an NFC tag on the bottle opens the scent profile in an app</li>
+      <li class="team"><strong>Engage:</strong> AI scent matching, a fragrance community and in-person events</li>
+      <li class="team"><strong>Return:</strong> bring the bottle back for rewards</li>
+    </ul>
+    <div class="gallery g2" style="margin-top:14px">${fig("fr7.jpg","App concept")}${fig("fr8.jpg","Touchpoints")}</div></div></div>`],
+    ["Recognition",`<div class="lx-cert">${fig("loreal-certificate.jpg","Certificate of participation, L'Oréal Brandstorm 2026")}</div>`],
+    ["Takeaways",`<div class="tk"><p>Sustainable can't mean ordinary. Not in luxury.</p><p>A luxury buyer still wants to feel special. So I made rarity the green story: scent from a rare flower that's never picked, and from invasive plants that are already being cleared.</p></div>`]
+  ]
+},
+{
+  id:"biotech", theme:"#001DA3", big:["2","brands, one post-yoga skin station"], heroImg:"bb-product.jpg", chip:"Concept", lens:"beauty strategy events", num:"04",
+  title:"<span class='b'>Biotech Beauty</span> × <span class='b'>CorePower Yoga</span>",
+  tags:"Beauty · Brand collaboration · Experiential",
+  hook:"A post-yoga skin station for acne-prone and sensitive skin",
+  cardMedia:`<div class="media bb-photo"><img src="${A}bb-product.jpg" alt="Biotech Beauty lip products in lab glassware" loading="lazy"><span class="bb-x">Biotech Beauty × CorePower Yoga</span></div>`,
+  summary:"A class proposal for Biotech Beauty, which is moving into acne-prone and sensitive skin. After a workout, these customers are the most wary of putting on makeup. We proposed a two-week skin station at CorePower Yoga in USC Village that lets them test products right after class.",
+  lead:`<div class="bb-pair"><figure>${BB_KEY}<figcaption>Concept: the in-studio skin lab, reading oil, hydration and redness</figcaption></figure><figure>${BB_PHONE}<figcaption>Concept: results and a matched kit, sent to the member’s phone</figcaption></figure></div>`,
+  meta:[["Role","Experience design: station layout &amp; cross-promotion"],["Timeline","Fall 2026"],["Type","Class project · Group 4"]],
+  blocks:[
+    ["Goal &amp; audience",`<dl class="ga"><div><dt>Goal</dt><dd>Get a cautious, hard-to-win customer to try the products in person, then buy and come back.</dd></div><div><dt>Audience</dt><dd>Students and young professionals with acne-prone or sensitive skin who work out and hesitate to put makeup back on afterward.</dd></div></dl>`],
+        ["The insight",`<p>Students often go straight from yoga to class or work. Heat and sweat leave skin more reactive, so people with acne-prone or sensitive skin hesitate to put makeup back on. A cautious audience like this needs to try the product in person before they trust it.</p><p class="cap">Header image: Biotech Beauty product photo.</p>`],
+    ["My part",`<p>I designed the station itself: two zones and the offer that ties both brands together.</p>
+      <div class="bb-zones">
+        <div class="bb-z in"><span class="bb-zi"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 6h12M20 6v12L9 38a4 4 0 0 0 3.5 6h23a4 4 0 0 0 3.5-6L28 18V6" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 30h20" stroke="currentColor" stroke-width="3"/></svg></span><span class="bb-zk">Zone 1 · Inside the studio</span><b>Testing lab</b><small>A sebumeter for oil, a corneometer for hydration, and digital imaging for redness. Staff pair the results with a quick skin quiz.</small></div>
+        <div class="bb-z out"><span class="bb-zi"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 16l4-10h28l4 10z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M6 16c2.7 4 5.3 4 8 0 2.7 4 5.3 4 8 0 2.7 4 5.3 4 8 0 2.7 4 5.3 4 8 0 2.7 4 5.3 4 8 0" fill="none" stroke="currentColor" stroke-width="3"/><path d="M10 22v20h28V22M20 42V30h8v12" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></span><span class="bb-zk">Zone 2 · USC Village walkway</span><b>Pop-up</b><small>Co-branded signage, full-size products, samples and checkout, right where members walk out.</small></div>
+      </div>
+      <div class="bb-swap"><span class="bb-swk">Two-way offer</span>
+        <div><b class="cp">Buy CorePower classes</b><i>→</i><b class="bt">Free Biotech Beauty skincare masterclass</b></div>
+        <div><b class="bt">Buy Biotech Beauty products</b><i>→</i><b class="cp">Free CorePower class pass</b></div>
+      </div>`],
+    ["The experience",`${BB_JOURNEY}`],
+    ["Takeaways",`<div class="tk"><p>A partnership needs two winners, not one sponsor.</p><p>Our professor flagged what we missed: CorePower got little beyond class passes, each member faced three asks at once, and discounts at every step pulled a prestige brand toward quick sales.</p><p>Next time I'd give both brands a real role, ask for one thing, and let the experience carry the value.</p></div>`]
+  ]
+},
+{
+  id:"earthmeal", theme:"#2E2147", big:["150","students, one overnight-oats night on Earth Day"], heroImg:"em-product.jpg", chip:"Top 3 of 16", lens:"social events", num:"05",
+  title:"Staying Oat Late — <span class='b'>Earthmeal</span> × Earth Day",
+  tags:"Event marketing · Social campaign · Community",
+  hook:"Selected by Earthmeal: <b>top 3 of 16 teams</b>",
+  cardMedia:`<div class="media bb-photo"><img src="${A}em-product.jpg" alt="Earthmeal Original superfood oats packet next to a jar of overnight oats" loading="lazy"><span class="bb-x em-x">Earthmeal × latenightsc · Earth Day</span></div>`,
+  summary:"A class pitch for Earthmeal's Earth Day 2027: a build-your-own overnight oats night co-hosted with latenightsc, the USC late-night events club. Students make tomorrow's breakfast on Earth Day night, then a three-phase social campaign turns the night into repeat buyers. Earthmeal picked it as one of 3 winning pitches out of 16 teams.",
+  meta:[["Role","Event concept & design"],["Timeline","Fall 2026"],["Type","Class project, USC Marshall · Team 4"],["Result","Selected by Earthmeal · top 3 of 16 teams"]],
+  blocks:[
+    ["Goal &amp; audience",`<dl class="ga"><div><dt>Goal</dt><dd>Turn one fun night into lasting customers: about 150 attendees, 120 email or SMS signups, and 45 first purchases within 14 days.</dd></div><div><dt>Audience</dt><dd>USC undergrad and grad students, 18–26, looking for a fun night on campus and open to better-for-you food.</dd></div></dl><p class="cap">Header image: Earthmeal product photo.</p>`],
+        ["My part",`<p>The core idea was mine: an overnight-oats night with latenightsc, because Earth Day 2027 falls on a Thursday, the club's regular night. I designed the event itself.</p>
+      <div class="em-ticket"><div><span>Thu, Apr 22, 2027</span><b>8–11 PM</b></div><div><span>Ronald Tutor Campus Center</span><b>~150 students</b></div><div><span>Co-hosted with</span><b>latenightsc</b></div></div>
+      ${fig("em-steps.jpg","The night in three steps: the Earthmeal base, your layers, your jar by morning. Original slide.","Event flow: Earthmeal base jar, choose your layers, layered overnight oats jars ready by morning","em-process")}`],
+    ["Social campaign",`<p class="cap" style="margin-top:0">Team work. Three phases that turn one night into a morning habit.</p>
+      <div class="em-phases">
+        <div><span class="em-ph">Phase 1 · Mar 29 – Apr 22</span><b>Build curiosity, then RSVPs</b><small>A 60-second “oat personality” quiz, partner posts with @latenightsc, and a countdown.</small></div>
+        <div><span class="em-ph">Phase 2 · Event night</span><b>Make the night shareable</b><small>Stories every 15 minutes, a post-your-jar UGC challenge, and a TikTok Live poll.</small></div>
+        <div><span class="em-ph">Phase 3 · Apr 23 – May 6</span><b>Turn one jar into a habit</b><small>QR check-in doubles as sign-up, 20% off a first 5-pack, and daily recipe emails matched to each oat personality.</small></div>
+      </div>
+      <div class="gallery g3 small-thumbs">${fig("ea6.jpg","Phase 1")}${fig("ea7.jpg","Phase 2")}${fig("ea12.jpg","Sample posts")}</div>`],
+    ["Targets",`<div class="em-funnel">
+        <div style="--w:100%"><b>150</b><span>attendees</span></div>
+        <div style="--w:80%"><b>120</b><span>email or SMS sign-ups</span></div>
+        <div style="--w:30%"><b>45</b><span>first purchases within 14 days</span></div>
+      </div>
+      <p class="cap">Planned goals, not results · $5,000 budget, about $33 per attendee. Each partner gets its own RSVP link, so we can see which channel drives sign-ups and which drives sales.</p>`],
+    ["Takeaways",`<div class="tk"><p>One great night isn't a strategy. A repeatable one is.</p><p>Next time I'd plan for scale from the start: how this campus night could run again, at more schools, and reach well past 150 people.</p></div>`]
+  ]
+}
+];
+
+/* cards */
+const cardsEl = document.getElementById("cards");
+const [first, ...rest] = CASES;
+const cardText = c => `<span class="num">${c.num}</span><h3>${c.title}</h3><div class="tags">${c.tags}</div><p class="hook">${c.hook}</p><span class="more">View case</span>`;
+cardsEl.innerHTML = `
+  <button class="card feature" data-id="${first.id}" data-lens="${first.lens}">${first.cardMedia}<div>${cardText(first)}</div></button>
+  <div class="grid">${rest.map(c=>`<button class="card" data-id="${c.id}" data-lens="${c.lens}"><div class="chipwrap">${c.cardMedia}${c.chip?`<span class="chip">${c.chip}</span>`:""}</div>${cardText(c)}</button>`).join("")}</div>`;
+cardsEl.addEventListener("click", e=>{ const b=e.target.closest(".card"); if(b) location.hash="case-"+b.dataset.id; });
+
+
+/* project filters */
+document.querySelector(".filters").addEventListener("click", e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  document.querySelectorAll(".filters button").forEach(x=>x.classList.toggle("on",x===b));
+  const f=b.dataset.f;
+  document.querySelectorAll("#cards .card").forEach(c=>{ c.hidden = !(f==="all" || c.dataset.lens.split(" ").includes(f)); });
+});
+
+/* case view */
+const caseEl=document.getElementById("case"), bodyEl=document.getElementById("caseBody");
+function renderCase(c){
+  caseEl.dataset.theme=c.id;
+  const i=CASES.indexOf(c), prev=CASES[(i-1+CASES.length)%CASES.length], next=CASES[(i+1)%CASES.length];
+  document.getElementById("caseCount").textContent=`${c.num} / 0${CASES.length}`;
+  bodyEl.innerHTML=`
+    <header class="case-hero${c.light?" light":""}" style="--t:${c.theme}"><div class="wrap ch-grid">
+      <div><p class="eyebrow">${c.tags}</p>
+      <h1 id="caseTitle">${c.title}</h1>
+      <p class="sum">${c.summary}</p></div>
+      ${c.heroImg?`<div class="ch-img"><img src="${A}${c.heroImg}" alt=""></div>`:`<div class="ch-big"><strong>${c.big[0]}</strong><span>${c.big[1]}</span></div>`}
+    </div></header>
+    <div class="wrap">
+    <dl class="meta">${c.meta.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>
+    ${c.lead?`<div class="lead-img">${c.lead}</div>`:""}
+    ${c.blocks.map(([h,html])=>`<div class="block"><h2>${h}</h2><div>${html}</div></div>`).join("")}
+    <div class="case-next">
+      <button type="button" data-go="${prev.id}"><small>← Previous</small><span>${prev.title}</span></button>
+      <button type="button" data-go="${next.id}"><small>Next →</small><span>${next.title}</span></button>
+    </div></div>`;
+}
+bodyEl.addEventListener("click", e=>{
+  const b=e.target.closest("[data-go]"); if(b){ location.hash="case-"+b.dataset.go; return; }
+  const img=e.target.closest("figure img"); if(img && !img.classList.contains("xhs-av")) openLb(img.src, img.alt);
+});
+function route(){
+  const m=location.hash.match(/^#case-([a-z]+)$/), c=m&&CASES.find(x=>x.id===m[1]);
+  if(c){ renderCase(c); caseEl.classList.add("open"); caseEl.scrollTop=0; document.body.style.overflow="hidden";
+         document.getElementById("caseClose").focus({preventScroll:true}); }
+  else if(caseEl.classList.contains("open")){ caseEl.classList.remove("open"); document.body.style.overflow="";
+         if(location.hash==="#work"||!location.hash) document.getElementById("work").scrollIntoView(); }
+}
+document.getElementById("caseClose").addEventListener("click",()=>{ location.hash="work"; });
+addEventListener("hashchange",route); route();
+
+
+/* lightbox */
+const lb=document.getElementById("lb"), lbImg=lb.querySelector("img");
+function openLb(src,alt){ lbImg.src=src; lbImg.alt=alt||""; lb.classList.add("open"); }
+lb.addEventListener("click",()=>lb.classList.remove("open"));
+addEventListener("keydown",e=>{
+  if(e.key!=="Escape") return;
+  if(lb.classList.contains("open")) lb.classList.remove("open");
+  else if(caseEl.classList.contains("open")) location.hash="work";
+});
+</script>
+</body>
+</html>
