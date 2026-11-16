@@ -3,11 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Susan Lu — Marketing Portfolio</title>
-<meta property="og:title" content="Susan Lu — Marketing Portfolio">
-<meta property="og:description" content="Content creator and marketing analytics student at USC Marshall, focused on beauty and fashion.">
+<title>Susan Lu | Beauty &amp; Fashion Marketing</title>
+<meta property="og:title" content="Susan Lu | Beauty &amp; Fashion Marketing">
+<meta property="og:description" content="Content creator and USC Marshall marketing student. Brand partnerships and campaign case studies in beauty and fashion.">
+<meta property="og:url" content="https://lulu071937.github.io/portfolio/">
+<meta property="og:image" content="https://lulu071937.github.io/portfolio/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:type" content="website">
-<meta name="description" content="Hsin-Yi (Susan) Lu — MS Marketing (Analytics) at USC Marshall. Content creator, beauty and fashion marketing.">
+<meta name="description" content="Content creator and USC Marshall marketing student. Brand partnerships and campaign case studies in beauty and fashion.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Instrument+Sans:wght@500;600;700&family=Source+Code+Pro:wght@500;600&display=swap" rel="stylesheet">
@@ -241,6 +245,7 @@ h1 .b,h3 .b,.case-next .b{font-family:inherit;font-weight:inherit;letter-spacing
 
 
 /* RedNote feature as one block */
+#creator{padding:72px 0 8px}
 .card.feature{background:var(--blush);border-radius:14px;padding:44px 48px;border-bottom:0;gap:56px;transition:background .25s}
 .card.feature:hover{background:#EED8CE}
 .feature .rn-media{display:flex;justify-content:center;align-items:center;gap:0;padding:8px 0;pointer-events:none}
@@ -699,6 +704,77 @@ figcaption em{font-style:italic;color:var(--body)}
   .feature h3{font-size:38px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* v2 about / experience / skills */
+.top .mark{white-space:nowrap}
+@media (max-width:480px){nav.main{gap:12px}nav.main a{font-size:12px}nav.main a[href="#skills"]{display:none}}
+.ab-photos{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:26px 22px;height:540px;padding:10px 6px}
+.ab-ph.a1{grid-row:1 / 3;transform:rotate(-2.5deg);align-self:center;height:86%}
+.ab-ph.a2{transform:rotate(2.5deg)}
+.ab-ph.a3{transform:rotate(-2deg)}
+@media (max-width:900px){.ab-photos{height:500px;max-width:560px}}
+@media (max-width:640px){.ab-photos{height:420px;gap:20px 14px}}
+
+
+
+.xc-note{font-size:13.5px;color:var(--mute);margin-top:12px;max-width:30em;line-height:1.5}.xc-note a{color:var(--accent);font-weight:600;text-decoration:none;white-space:nowrap}.xc-note a:hover{text-decoration:underline}
+.xc.xc-split{display:grid;grid-template-columns:40% 1fr;gap:0;padding:0;overflow:hidden}
+.xc-img{margin:0;position:relative;min-height:100%}
+.xc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.xc-img figcaption{display:none}
+.xc-body{padding:24px 26px 22px}
+.xc-split .xc-num{font-size:clamp(52px,5.4vw,76px)}
+a.xc-go{text-decoration:none}
+@media (max-width:640px){.xc.xc-split{grid-template-columns:1fr}.xc-img{height:260px}}
+
+.xc-pics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.xc-pics a{text-decoration:none;color:inherit}.xc-pics figure{margin:0}.xc-pics img{width:100%;height:104px;object-fit:cover;display:block;border-radius:10px;border:1px solid var(--line)}.xc-pics figcaption{font-size:11.5px;color:var(--mute);margin-top:6px;line-height:1.3}.xc-pics a:hover figcaption{color:var(--accent)}
+.about2{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.ab-bio{font-size:16.5px;max-width:32em;margin:18px 0 0}.ab-bio + .ab-bio{margin-top:12px}
+.edu2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px;padding-top:18px;border-top:1px solid var(--accent)}
+.edu2 b{display:block;font-weight:600;color:var(--ink);font-size:14px}.edu2 span{font-size:13px;color:var(--mute)}
+.ab-ph{position:relative;margin:0;background:#fff;padding:10px 10px 34px;box-shadow:0 22px 34px -18px rgba(60,40,30,.45),0 2px 6px rgba(60,40,30,.1)}
+.ab-ph img,.ph-slot{display:block;width:100%;height:100%;object-fit:cover}
+.ph-slot{display:flex;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(135deg,#F2E3DB 0 10px,#F7EDE6 10px 20px);color:var(--accent);font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:1px dashed #D9B8AA}
+.ab-ph figcaption{position:absolute;left:12px;bottom:8px;font-family:var(--serif);font-style:italic;font-size:16px;color:#5A4A40}
+.xp2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.xc{display:block;text-decoration:none;color:inherit;background:#fff;border:0;box-shadow:0 1px 2px rgba(60,40,30,.06),0 14px 30px -20px rgba(60,40,30,.35);border-radius:20px;padding:26px 28px 24px;transition:transform .2s,box-shadow .2s}
+a.xc:hover,a.hl-t:hover{transform:translateY(-3px);box-shadow:0 18px 30px -20px rgba(60,40,30,.45)}
+.xc-top{display:flex;justify-content:space-between;align-items:center}
+.xc-when{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}
+.xc-go,.hl-t i{font-style:normal;font-size:13px;font-weight:600;color:var(--accent)}
+.xc-num{font-family:var(--serif);font-size:clamp(56px,7vw,88px);line-height:1;color:var(--accent);margin:18px 0 6px}
+.xc-k{font-size:15px;color:var(--ink);max-width:22em}
+.xc h3{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--ink);margin-top:22px;padding-top:16px;border-top:1px solid #EFE6DC}
+.xc-org{font-size:14px;color:var(--mute)}
+.xp-also{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.xp-also > div{display:grid;grid-template-columns:84px 1fr;gap:12px;font-size:14px;padding:16px 0;border-top:1px solid var(--line)}
+.xp-also b{color:var(--ink);font-weight:600}
+.hl{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.hl-t{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;background:#fff;box-shadow:0 1px 2px rgba(60,40,30,.06),0 14px 30px -22px rgba(60,40,30,.35);border-radius:18px;padding:22px 20px;transition:transform .2s,box-shadow .2s}
+.hl-t b{font-family:var(--serif);font-weight:400;font-size:44px;line-height:1;color:var(--accent)}
+.hl-t span{font-size:14px;line-height:1.45;flex:1}
+.cv-cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:44px;padding:24px 28px;border-radius:20px;background:var(--night);color:#F5F0E8}
+.cv-cta p{font-family:var(--serif);font-size:28px}
+.btn.dark{background:#F5F0E8;color:var(--night);border-color:#F5F0E8}
+.sk2{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.sk2 h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:13px;padding:7px 13px;border-radius:999px;background:var(--paper);border:1px solid #E3CDBF;color:var(--ink)}
+.sk-line{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:32px;padding-top:18px;border-top:1px solid #DFC6BA;font-size:14px}
+.sk-line b{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-right:10px;font-weight:600}
+@media (max-width:900px){.about2{grid-template-columns:1fr;gap:40px}.hl{grid-template-columns:1fr 1fr}.sk2{grid-template-columns:1fr;gap:22px}}
+@media (max-width:640px){.xp2,.xp-also{grid-template-columns:1fr}.edu2{grid-template-columns:1fr}.hl-t b{font-size:34px}.cv-cta p{font-size:22px}}
+
+/* L'Oréal card, clean editorial */
+.card .media.lo2{position:relative;container-type:inline-size;background:radial-gradient(120% 95% at 50% 36%,#FCF8F4 0%,#F3E6DD 52%,#E8D5C9 100%)}
+.lo2-arch{position:absolute;left:50%;top:5%;width:46%;height:60%;transform:translateX(-50%);border:1px solid rgba(168,128,74,.5);border-bottom:0;border-radius:999px 999px 0 0}
+.lo2-plinth{position:absolute;left:50%;top:64%;width:50%;height:5%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(120,70,55,.28),transparent)}
+.card .media.lo2 img.lo2-bottle{position:absolute;left:50%;top:11%;width:72%;height:auto;object-fit:contain;transform:translateX(-50%);transition:transform .6s ease}
+.card:hover .media.lo2 img.lo2-bottle{transform:translateX(-50%) scale(1.03)}
+.lo2-type{position:absolute;left:0;right:0;bottom:6.5%;display:flex;flex-direction:column;align-items:center;gap:1.2cqw;text-align:center}
+.lo2-k{font-size:2.3cqw;letter-spacing:.32em;text-transform:uppercase;color:#9A7A4C;font-weight:500}
+.lo2-t{font-family:var(--serif);font-style:italic;font-size:7.6cqw;line-height:1;color:#3A2924}
+.lo2-n{font-size:2.5cqw;letter-spacing:.14em;text-transform:uppercase;color:#6E5A50}.lo2-n i{font-style:normal;color:#B08A55;margin:0 .5em}
 </style>
 </head>
 <body>
@@ -725,11 +801,11 @@ figcaption em{font-style:italic;color:var(--body)}
         <p class="eyebrow">Hsin-Yi (Susan) Lu · Los Angeles</p>
         <h1>Susan <em>Lu</em></h1>
         <p class="role">Content creator &amp; marketing analytics student, focused on beauty and fashion</p>
-        <p class="lede">MS Marketing at USC Marshall. Looking for Summer 2027 internships in brand, social and content marketing at beauty and fashion brands.</p>
+        <p class="lede">MS Marketing at USC Marshall. A bilingual creator who knows RedNote from the inside, the platform brands use to reach Chinese-speaking shoppers. Looking for Summer 2027 internships in brand, social and content marketing at beauty and fashion brands.</p>
         <div class="proof">
           <div><strong>300+</strong><small>short videos I scripted, shot and edited</small></div>
           <div><strong>13K+</strong><small>followers on RedNote</small></div>
-          <div><strong>5+</strong><small>clothing and bag brand partnerships</small></div>
+          <div><strong>318K</strong><small>views on my breakout video</small></div>
         </div>
         <div class="cta">
           <a class="btn light" href="#work">See selected work ↓</a>
@@ -737,6 +813,10 @@ figcaption em{font-style:italic;color:var(--body)}
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="creator">
+    <div class="wrap"><div id="featureCard"></div></div>
   </section>
 
   <section id="work">
@@ -766,115 +846,73 @@ figcaption em{font-style:italic;color:var(--body)}
   </section>
 
   <section id="about">
-    <div class="wrap about">
-      <div>
+    <div class="wrap about2">
+      <div class="ab-text">
         <p class="eyebrow" style="margin-bottom:16px">About</p>
         <h2 class="hi">Hi, I'm <em>Susan.</em></h2>
-      </div>
-      <div class="bio">
-        <p>I grew up in Taiwan, studied public administration at National Chengchi University, and started making short videos on RedNote in 2024. Three hundred videos later, I'm at USC Marshall studying marketing analytics, learning to back the instinct I built as a creator with data.</p>
-        <p>I make everyday content: food, routine, and now student life in Los Angeles. My audience is mostly women aged 18 to 34, the same people beauty and fashion brands want to reach. That's where I want to work next, on brand, social and content teams.</p>
-        <div class="edu">
-          <div><b>MS Marketing, Marketing Analytics Track (STEM)</b><span>USC Marshall School of Business · Expected Dec 2027</span></div>
-          <div><b>BA Public Administration</b><span>National Chengchi University, Taiwan · 2021–2025 · GPA 3.89/4.3</span></div>
+        <p class="ab-bio">I'm from Taiwan, and I started a channel on RedNote (Xiaohongshu) because it felt like the most hands-on way to learn brand marketing. Running your own channel is really just building your own brand.</p>
+        <p class="ab-bio">Two years in, it's become my life studying abroad in LA. The part I love most is digging into the numbers to see what actually resonates. Now I want to do that for a real brand, in fashion or beauty.</p>
+        <div class="edu2">
+          <div><b>MS Marketing, Analytics Track</b><span>USC Marshall · Dec 2027</span></div>
+          <div><b>BA Public Administration</b><span>National Chengchi University · 2025</span></div>
         </div>
+      </div>
+      <div class="ab-photos">
+        <figure class="ab-ph a1"><img src="about-me.jpg" alt="Susan smiling next to a pink hibiscus" loading="lazy" style="object-position:50% 30%"><figcaption>Off camera</figcaption></figure>
+        <figure class="ab-ph a2"><img src="about-cook.jpg" alt="Susan at a Thai cooking class" loading="lazy" style="object-position:50% 25%"><figcaption>Cooking class</figcaption></figure>
+        <figure class="ab-ph a3"><img src="about-muaythai.jpg" alt="Susan in boxing gloves at a Muay Thai gym" loading="lazy" style="object-position:50% 20%"><figcaption>Muay Thai</figcaption></figure>
       </div>
     </div>
   </section>
 
   <div class="marquee" aria-hidden="true"><div class="mq-track">
-    <span>USC Marshall</span><span>RedNote</span><span>StockFeel</span><span>L'Oréal Brandstorm 2026</span><span>Inside LVMH</span><span>REACH Creator Camp</span><span>Digital Marketing Lab</span><span>National Chengchi University</span>
-    <span>USC Marshall</span><span>RedNote</span><span>StockFeel</span><span>L'Oréal Brandstorm 2026</span><span>Inside LVMH</span><span>REACH Creator Camp</span><span>Digital Marketing Lab</span><span>National Chengchi University</span>
+    <span>USC Marshall</span><span>RedNote</span><span>StockFeel</span><span>L'Oréal Brandstorm 2026</span><span>REACH Creator Camp</span><span>Digital Marketing Lab</span><span>National Chengchi University</span>
+    <span>USC Marshall</span><span>RedNote</span><span>StockFeel</span><span>L'Oréal Brandstorm 2026</span><span>REACH Creator Camp</span><span>Digital Marketing Lab</span><span>National Chengchi University</span>
   </div></div>
 
   <section id="experience">
     <div class="wrap">
-      <div class="sec-head"><h2>Experience</h2><p>Where I've worked and what I've built.</p></div>
-      <div class="xp">
-        <div class="xp-item">
-          <div class="xp-when">Mar 2024 – Present</div>
-          <div>
-            <h3>Content Creator</h3>
-            <p class="xp-org"><span class='b'>RedNote (Xiaohongshu)</span> · Freelance</p>
-            <ul><li>Ideated, scripted, filmed and edited 300+ short videos, and grew the channel to 13K+ followers by tracking engagement data</li><li>Partnered with 5+ clothing and bag brands, including a paid partnership with <span class='b'>ROBINMAY</span>, plus paid partnerships with beauty and lifestyle brands <span class='b'>Teddi Lab by Unichi</span>, <span class='b'>KaPod</span> and <span class='b'>JisuLife</span>; wrote scripts and coordinated with brand teams</li><li>My top-performing video reached 23.7K impressions with a 6.2% engagement rate</li><li>Audience: 90% women, about 80% aged 18–34</li></ul><a class="xp-link" href="#case-rednote">View my work →</a>
-          </div>
-        </div>
-        <div class="xp-item">
-          <div class="xp-when">Sep 2024 – Jul 2025</div>
-          <div>
-            <h3>Marketing Intern</h3>
-            <p class="xp-org"><span class='b'>StockFeel</span> · Taipei, Taiwan · Hybrid</p>
-            <ul><li>Secured partnerships with 50+ organizations, including sponsorships, campus activations and branded event signage, for events of 50 to 300+ attendees</li><li>Drove a 200% membership increase in three months through content, engagement strategy and KPI tracking</li><li>Led StockFeel's first campus sponsorship event end to end, from planning and proposal writing to publication, bringing in 10+ schools within three days</li><li>Ran competitive research and applied SEO to grow organic reach and search visibility</li></ul>
-          </div>
-        </div>
-        <div class="xp-item">
-          <div class="xp-when">Jun 2025 – Jul 2025</div>
-          <div>
-            <h3>Marketing Executive</h3>
-            <p class="xp-org"><span class='b'>Digital Marketing Lab</span> · National Chengchi University</p>
-            <ul><li>Managed the lab's social account with campus street-interview content</li><li>Designed an Instagram photo-frame campaign from audience input that became a graduation-season ritual</li></ul>
-          </div>
-        </div>
-        <div class="xp-item">
-          <div class="xp-when">Fall 2026</div>
-          <div>
-            <h3>Creator Camp cohort</h3>
-            <p class="xp-org"><span class='b'>REACH</span> · Content creator and social media program</p>
-            
-          </div>
+      <div class="sec-head"><h2>Experience</h2><p>The short version. The details are on my résumé.</p></div>
+      <div class="xp2">
+        <a class="xc" href="#case-rednote">
+          <div class="xc-top"><span class="xc-when">2024 – Now</span><span class="xc-go">View work →</span></div>
+          <div class="xc-num">13K+</div>
+          <p class="xc-k">followers, 300+ videos, brand partnerships across fashion, beauty and lifestyle</p>
+          <h3>Content Creator</h3><p class="xc-org">RedNote (Xiaohongshu) · Freelance</p>
+        </a>
+        <div class="xc">
+          <div class="xc-top"><span class="xc-when">2024 – 2025</span></div>
+          <div class="xc-num">200%</div>
+          <p class="xc-k">membership growth in three months, with 50+ partner organizations</p>
+          <p class="xc-note">Also launched StockFeel's first campus sponsorship program, signing 10+ schools in three days. <a href="https://www.stockfeel.com.tw/%E6%A0%A1%E5%9C%92%E8%B4%8A%E5%8A%A9-%E8%82%A1%E6%84%9F-%E5%A4%A7%E5%AD%B8/" target="_blank" rel="noopener">See the program page (in Traditional Chinese) ↗</a></p>
+          
+          <h3>Marketing Intern</h3><p class="xc-org">StockFeel · Taipei</p>
         </div>
       </div>
-      <h3 class="xp-sub">Leadership &amp; projects</h3>
-      <div class="xp">
-        <div class="xp-item">
-          <div class="xp-when">Oct 2026</div>
-          <div>
-            <h3>3rd Place, FLUO Fall Case Competition</h3>
-            <p class="xp-org"><span class='b'>USC Marshall</span> · Team Fluosophy</p>
-            <ul><li>Co-developed Confluo, a social bill-splitting and budgeting tool for students, built on a 51-student survey</li><li>Ran on-campus waitlist outreach that converted 57% to sign-up vs 0.7% online, about 80× higher</li></ul><a class="xp-link" href="#case-confluo">View the case →</a>
-          </div>
-        </div>
-        <div class="xp-item">
-          <div class="xp-when">Fall 2026</div>
-          <div>
-            <h3>Top 3 of 16 teams, Earthmeal brand pitch</h3>
-            <p class="xp-org"><span class='b'>USC Marshall</span> · Team 4</p>
-            <ul><li>Came up with the core idea: an Earth Day overnight-oats night co-hosted with latenightsc for ~150 students</li><li>Pitch selected by Earthmeal as one of 3 out of 16 teams</li></ul><a class="xp-link" href="#case-earthmeal">View the case →</a>
-          </div>
-        </div>
-        <div class="xp-item">
-          <div class="xp-when">Mar 2024 – Jun 2024</div>
-          <div>
-            <h3>Project Manager</h3>
-            <p class="xp-org"><span class='b'>Marketing &amp; Management Course Competition</span> · NCCU</p>
-            <ul><li>Developed a video content strategy that drew 1,500 views within a week</li><li>Launched NFC sticker products with an end-to-end marketing and sales plan; they sold out in two weeks</li></ul>
-          </div>
-        </div>
-        <div class="xp-item">
-          <div class="xp-when">Sep 2022 – Jun 2023</div>
-          <div>
-            <h3>Team Leader, Activities Department</h3>
-            <p class="xp-org"><span class='b'>NCCU Ambassadors</span></p>
-            <ul><li>Led a team of 10 to plan the university graduation ceremony, 6 campus tours and 4 receptions</li></ul>
-          </div>
-        </div>
+      <div class="xp-also">
+        <div><span class="xc-when">2025</span><p><b>Marketing Executive</b>, Digital Marketing Lab, NCCU. Ran the lab's social account and an Instagram photo-frame campaign that became a graduation ritual.</p></div>
+        <div><span class="xc-when">Fall 2026</span><p><b>Creator Camp cohort</b>, REACH content creator and social media program.</p></div>
       </div>
+      <h3 class="xp-sub">Highlights</h3>
+      <div class="hl">
+        <a class="hl-t" href="#case-confluo"><b>3rd</b><span>FLUO Fall Case Competition, USC Marshall</span><i>View case →</i></a>
+        <a class="hl-t" href="#case-earthmeal"><b>3 / 16</b><span>Pitch selected by Earthmeal, USC Marshall</span><i>View case →</i></a>
+        <div class="hl-t"><b>2 wks</b><span>NFC stickers sold out, NCCU course competition (PM)</span></div>
+        <div class="hl-t"><b>10</b><span>Team I led for NCCU's graduation ceremony and campus tours</span></div>
+      </div>
+      <div class="cv-cta"><p>Want the full picture?</p><a class="btn dark" href="Hsin-Yi_Susan_Lu_Resume.pdf" target="_blank" rel="noopener">See full résumé (PDF) →</a></div>
     </div>
   </section>
 
   <section id="skills">
     <div class="wrap">
-      <div class="sec-head"><h2>Skills &amp; certificates</h2><p>What I bring to a brand team.</p></div>
-      <div class="skills">
-        <div><h4>Content &amp; social</h4><ul><li>Short-form video: idea, script, shoot, edit</li><li>Copywriting and titles that earn the tap</li><li>Content planning and scheduling</li><li>Community engagement</li><li>Brand partnership coordination</li></ul></div>
-        <div><h4>Strategy &amp; research</h4><ul><li>Trend and competitor research</li><li>Student surveys and insights</li><li>Product features and go-to-market</li><li>Events, sponsorships and campus activations</li><li>KPI tracking and SEO</li></ul></div>
-        <div><h4>Tools &amp; platforms</h4><ul><li>RedNote (Xiaohongshu), TikTok, Instagram, Facebook, Pinterest</li><li>CapCut, Canva</li><li>Google Analytics</li><li>Excel, PowerPoint, Word</li></ul></div>
-        <div><h4>Certificates</h4><ul><li>Inside LVMH<small>Sep 2026</small></li><li>L'Oréal Brandstorm 2026, participation<small>Mar 2026</small></li><li>LinkedIn Marketing Strategy<small>Oct 2025</small></li><li>Google Analytics<small>Sep 2025</small></li></ul></div>
+      <div class="sec-head"><h2>Skills</h2><p>What I bring to a brand team.</p></div>
+      <div class="sk2">
+        <div><h4>Content &amp; social</h4><p class="chips"><span>Short-form video</span><span>Scripting &amp; editing</span><span>Copywriting</span><span>Content planning</span><span>Brand partnerships</span><span>Community</span></p></div>
+        <div><h4>Strategy &amp; research</h4><p class="chips"><span>Trend research</span><span>Surveys &amp; insights</span><span>Go-to-market</span><span>Events &amp; activations</span><span>KPI tracking</span><span>SEO</span></p></div>
+        <div><h4>Tools</h4><p class="chips"><span>RedNote</span><span>TikTok</span><span>Instagram</span><span>CapCut</span><span>Canva</span><span>Google Analytics</span><span>Excel</span></p></div>
       </div>
-      <div class="lang">
-        <div><h4>Languages</h4><p>Mandarin (native) · English (professional working proficiency)</p></div>
-        <div><h4>Interests</h4><p>Cooking · Muay Thai</p></div>
-      </div>
+      <div class="sk-line"><span><b>Certificates</b> Inside LVMH · L'Oréal Brandstorm 2026 · Google Analytics · LinkedIn Marketing Strategy</span><span><b>Languages</b> Mandarin (native) · English (professional)</span></div>
       <p class="avail">Available for Summer 2027 internships.</p>
     </div>
   </section>
@@ -1129,7 +1167,7 @@ const CASES = [
   hook:"<b>90% women</b> audience · paid partnerships with <span class='b'>ROBINMAY</span> and <span class='b'>Teddi Lab by Unichi</span>",
   cardMedia:`<div class="media rn-media">${xhs("teddi")}${xhs("rm")}${xhs("food")}</div>`,
   summary:"Since March 2024 I've run my own RedNote (Xiaohongshu) channel. I come up with every video, write the script, film and edit it, and work directly with brand teams on partnerships. I create in Mandarin for a Chinese-speaking audience.",
-  meta:[["Role","Content creator (own channel)"],["Timeline","Mar 2024 – present"],["Paid partners","ROBINMAY · Teddi Lab by Unichi · KaPod · JisuLife"]],
+  meta:[["Role","Content creator (own channel)"],["Timeline","Mar 2024 – present"],["Selected paid partners","ROBINMAY · Teddi Lab by Unichi · KaPod · JisuLife"]],
   blocks:[
     ["Featured partnerships",`
       <p><strong>Shopping vlog at a <span class='b'>ROBINMAY</span> store</strong><span class="badge">Paid brand partnership</span></p>
@@ -1154,6 +1192,15 @@ const CASES = [
         <div><strong>Top 5</strong><small>follower interests include fashion and beauty</small></div>
       </div>
       <p class="cap">From RedNote creator analytics, Oct 30 – Nov 7, 2026.</p>`],
+    ["How I use the numbers",`
+      <p>After every post I check the analytics: where viewers drop off, impressions, engagement, average watch time, how many stay past the first 5 seconds, and cover click-through rate. Then I change the next video's opening, cover or title based on what I see.</p>
+      <p>That loop led to my breakout video. It passed 100K views in its first month and is what grew the channel.</p>
+      <div class="stats" style="max-width:none">
+        <div><strong>318K</strong><small>views on one video</small></div>
+        <div><strong>7.7K</strong><small>likes</small></div>
+        <div><strong>6.4K</strong><small>saves</small></div>
+        <div><strong>186</strong><small>comments</small></div>
+      </div>`],
     ["Own content",`
       <p>Most of what I post is my own: daily vlogs about food, routine, and now student life in Los Angeles.</p>
       <div class="gallery g3">
@@ -1244,7 +1291,7 @@ const CASES = [
   title:"Prosperity Sprawl — a fragrance concept",
   tags:"Beauty · Fragrance concept · Sustainability",
   hook:"<span class='b'>L'Oréal Brandstorm 2026</span> · team entry",
-  cardMedia:`<div class="media lo-media">${LO_CARD}</div>`,
+  cardMedia:`<div class="media lo2"><div class="lo2-arch"></div><div class="lo2-plinth"></div><img class="lo2-bottle" src="${A}lo-cutout.webp" alt="Prosperity Sprawl bottle with lily, leucaena and sandalwood" loading="lazy"><div class="lo2-type"><span class="lo2-k">Eau de Parfum · Concept</span><span class="lo2-t">Prosperity Sprawl</span><span class="lo2-n">Lily <i>·</i> Leucaena <i>·</i> Sandalwood</span></div></div>`,
   summary:"Our team's entry to L'Oréal Brandstorm 2026, L'Oréal's student innovation competition. A fragrance built from flowers that are never picked, invasive plants and reclaimed sandalwood, with an app and in-store experience around it.",
   meta:[["Role","Participant · fragrance concept"],["Timeline","2026"],["Type","Competition entry (team)"],["Organizer","<span class='b'>L'Oréal Brandstorm</span>"]],
   blocks:[
@@ -1322,8 +1369,10 @@ const CASES = [
 const cardsEl = document.getElementById("cards");
 const [first, ...rest] = CASES;
 const cardText = c => `<span class="num">${c.num}</span><h3>${c.title}</h3><div class="tags">${c.tags}</div><p class="hook">${c.hook}</p><span class="more">View case</span>`;
+const featEl = document.getElementById("featureCard");
+featEl.innerHTML = `<button class="card feature" data-id="${first.id}">${first.cardMedia}<div>${cardText(first)}</div></button>`;
+featEl.addEventListener("click", e=>{ const b=e.target.closest(".card"); if(b) location.hash="case-"+b.dataset.id; });
 cardsEl.innerHTML = `
-  <button class="card feature" data-id="${first.id}" data-lens="${first.lens}">${first.cardMedia}<div>${cardText(first)}</div></button>
   <div class="grid">${rest.map(c=>`<button class="card" data-id="${c.id}" data-lens="${c.lens}"><div class="chipwrap">${c.cardMedia}${c.chip?`<span class="chip">${c.chip}</span>`:""}</div>${cardText(c)}</button>`).join("")}</div>`;
 cardsEl.addEventListener("click", e=>{ const b=e.target.closest(".card"); if(b) location.hash="case-"+b.dataset.id; });
 
